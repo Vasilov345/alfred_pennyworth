@@ -1,6 +1,6 @@
 import unittest
 
-from git_intro.homework import calculate_rooms_number
+from git_intro.homework_1 import calculate_rooms_number
 
 
 class TestCalculateRoomsNumber(unittest.TestCase):
