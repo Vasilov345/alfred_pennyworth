@@ -15,4 +15,29 @@ def calculate_ships(data: List[List[int]]):
         [0, 0, 1])
         >>> 2
     """
-    pass
+    iteration_size = len(data)
+    res_ships = 0
+    for i in range(iteration_size):
+        for j in range(iteration_size):
+            #print (matrix [i][j])
+
+            if matrix [i][j] == 1:
+                try:
+                    if matrix[i+1][j] and matrix[i][j+1] == 0:
+                        continue
+                except IndexError:
+                    res_ships += 1
+    print(res_ships)
+
+
+matrix = [[1, 0, 1, 1, 1, 1, 1, 0, 0, 1],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+          [0, 0, 0, 0, 0, 1, 0, 0, 0, 1],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+          [0, 1, 0, 1, 1, 0, 0, 0, 0, 0],
+          [0, 1, 0, 0, 0, 0, 0, 0, 1, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [1, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+          [1, 0, 0, 0, 0, 0, 1, 1, 1, 1]]
+calculate_ships(matrix)

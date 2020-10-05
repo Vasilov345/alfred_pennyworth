@@ -20,4 +20,16 @@ def calculate_rooms_number(data: List[List[int]]) -> int:
         calculate_rooms_number([[1, 2], [3, 4], [1, 5], [6, 7]])
         >>> 2
     """
-    pass
+    rooms_needed = 1
+    if not data:
+        return rooms_needed - 1
+    for i in range(len(data)):
+        if i < len(data) - 1:
+            if data[i][1] >= data[i+1][0]:
+                rooms_needed += 1
+    print(rooms_needed)
+    return rooms_needed
+
+
+
+
