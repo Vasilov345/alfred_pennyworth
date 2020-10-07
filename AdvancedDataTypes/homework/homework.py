@@ -105,3 +105,4 @@ def task_7_insert_2_vars_into_string(age: float, habit: str):
     str_habit = "".join(habit_lst)
 
     return f"I have {str_age} years and I love {str_habit:10}"
+#test
