@@ -1,6 +1,5 @@
 import unittest
-
-from homework import homework_advanced
+import homework_advanced
 
 
 class TestGenerateAlphabet(unittest.TestCase):
