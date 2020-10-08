@@ -9,6 +9,8 @@ def generate_alphabet():
     alphabet_list = list(alphabet_string)
     while x <= len(alphabet_list):
         run_num = random.randint(0, 100)
+        if run_num in run_list:
+            continue
         run_list.append(run_num)
         run_list = list(tuple(run_list))
         x += 1
@@ -16,6 +18,7 @@ def generate_alphabet():
     for x in alphabet_list:
         keys_list.append({x:keys_alphabet_list[x]})
     return keys_list
+
 
 def sort_alphabet(l2):
     l3 = []
@@ -30,4 +33,3 @@ def sort_alphabet(l2):
         sorted_alphabet.append({x: s[x]})
     print(sorted_alphabet)
     return sorted_alphabet
-
