@@ -1,4 +1,5 @@
 from typing import List, Dict
+import string
 
 Alphabet = List[Dict[str, int]]
 
@@ -20,6 +21,7 @@ def generate_alphabet() -> Alphabet:
     ]
     """
     pass
+    dict(zip(string.ascii_lowercase, range(0,101)))
 
 
 def sort_alphabet(data: Alphabet) -> Alphabet:

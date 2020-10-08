@@ -7,25 +7,20 @@ DT = List[ST]
 
 
 def task_1_fix_names_start_letter(data: DT) -> DT:
-    """
-    Make all `names` field in list of students to start from upper letter
-
-    Examples:
-        fix_names_start_letters([{'name': 'Alex', 'age': 26}, {'name': 'denys', 'age': 89}])
-        >>> [{'name': 'Alex', 'age': 26}, {'name': 'Denys', 'age': 89}]
-    """
-    pass
+    [value.update({'name': value.get('name').title()}) for value in data if value.get('name') if
+     value.get('name') not in data]
+    return data
 
 
 def task_2_remove_dict_fields(data: DT, redundant_keys: List[str]) -> DT:
     """given_data
     Remove from dictionaries given key value
-
     Examples:
        remove_dict_field([{'name': 'Alex', 'age': 26}, {'name': 'denys', 'age': 89}], 'age')
         >>> [{'name': 'Alex'}, {'name': 'denys'}]
     """
-    pass
+    rem = [new_l for new_l in data for v in redundant_keys if v == redundant_keys]
+    return rem
 
 
 def task_3_find_item_via_value(data: DT, value) -> DT:
@@ -33,16 +28,17 @@ def task_3_find_item_via_value(data: DT, value) -> DT:
     Find and return all items that has @searching value in any key
     Examples:
         find_item_via_value([{'name': 'Alex', 'age': 26}, {'name': 'denys', 'age': 89}], 26)
-        >>> [{'name': 'Alex', 'age': 26}]
+    >>> [{'name': 'Alex', 'age': 26}]
     """
-    pass
+    find = [find for find in data for n in find.values() if n == value]
+    return find
 
 
 def task_4_return_lambda_sum_2_ints() -> DT:
     """
     Return lambda operator which take 2 integer params and returns their sum
     """
-    pass
+    return lambda x, y: x + y
 
 
 def task_5_append_str_to_list_and_return(input_data: List, elem: str):
@@ -50,7 +46,9 @@ def task_5_append_str_to_list_and_return(input_data: List, elem: str):
     Return list with the element appended to it.
     But the list itself should not be changed
     """
-    pass
+    my_list = input_data.copy()
+    my_list.append(elem)
+    return my_list
 
 
 def task_6_insert_function_result_into_string(func: Callable):
@@ -61,6 +59,8 @@ def task_6_insert_function_result_into_string(func: Callable):
     Examples:
         func returns "run", resulting string should be - "start run finish"
     """
+    res = f"start {func()} finish"
+    return res
 
 
 def task_7_insert_2_vars_into_string(age: float, habit: str):
@@ -71,3 +71,4 @@ def task_7_insert_2_vars_into_string(age: float, habit: str):
     Examples:
         "I have 10.4 years and I love cars      "
     """
+    res_print = print()
