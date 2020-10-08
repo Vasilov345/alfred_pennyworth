@@ -1,0 +1,5 @@
+1. write functions in homework.py and homework_advanced.py acc. to docstrings
+2. run tests.py to check if homework functions are correct
+3. run tests_advanced.py to check if homework_advanced.py functions are correct
+
+Note: In case of success tests will show success, FAILED otherwise
