@@ -1,32 +1,38 @@
+import string
+import random
+import collections
 from typing import List, Dict
 
 Alphabet = List[Dict[str, int]]
 
-
-def generate_alphabet() -> Alphabet:
-    """
-    Generate list of dicts.
-    Where each dict contain 1 pair of key/value
-    key - letter from alphabet
-    value - random int value from 0 to 100
-
-    Examples:
-        generate_alphabet()
-    >>>
-    [
-        {'a': 5}, {'b': 57}, {'c': 23}, {'d': 57}, {'e': 88}, {'f': 86}, {'g': 12}, {'h': 41}, {'i': 8}, {'j': 50},
-        {'k': 1}, {'l': 61}, {'m': 79}, {'n': 69}, {'o': 3}, {'p': 30}, {'q': 75}, {'r': 70}, {'s': 9},
-        {'t': 57}, {'u': 34}, {'v': 70}, {'w': 13}, {'x': 86}, {'y': 12}, {'z': 82}
-    ]
-    """
-    pass
+def generate_alphabet():
+    keys_list = []
+    run_list = []
+    x = 1
+    alphabet_string = string.ascii_lowercase
+    alphabet_list = list(alphabet_string)
+    while x <= len(alphabet_list):
+        run_num = random.randint(0, 100)
+        run_list.append(run_num)
+        run_list = list(tuple(run_list))
+        x += 1
+    keys_alphabet_list = dict(zip(alphabet_list, run_list))
+    for x in alphabet_list:
+        keys_list.append({x:keys_alphabet_list[x]})
+    print(keys_list)
+    return keys_list
 
 
-def sort_alphabet(data: Alphabet) -> Alphabet:
-    """
-    Sort incoming alphabet by int values.
-    Examples:
-        sort_alphabet([{'a': 5}, {'b': 57}, {'c': 23}])
-        >>> [{'a': 5}, {'c': 23}, {'b': 57}]
-    """
-    pass
+def task_2_remove_dict_fields(l2):
+    l3 = []
+    s = {}
+    s_1 = []
+    for k in l2:
+        l3.append(k)
+        for j, d in k.items():
+            s[j] = d
+    s = {k: v for k, v in sorted(s.items(), key=lambda item: item[1])}
+    for x in s:
+        s_1.append({x: s[x]})
+    print(s_1)
+    return s_1
