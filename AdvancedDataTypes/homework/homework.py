@@ -1,3 +1,4 @@
+import math
 from typing import List, Dict, Union, Callable
 
 # We will work with such dicts
@@ -59,8 +60,7 @@ def task_6_insert_function_result_into_string(func: Callable):
     Examples:
         func returns "run", resulting string should be - "start run finish"
     """
-    res = f"start {func()} finish"
-    return res
+    return f'start {func()} finish'
 
 
 def task_7_insert_2_vars_into_string(age: float, habit: str):
@@ -71,4 +71,5 @@ def task_7_insert_2_vars_into_string(age: float, habit: str):
     Examples:
         "I have 10.4 years and I love cars      "
     """
-    res_print = print()
+    return f"I have {int(age * 10) / 10} years and I love {habit.ljust(10)[:10]}"
+
