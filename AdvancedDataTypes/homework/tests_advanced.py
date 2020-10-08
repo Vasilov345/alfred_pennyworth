@@ -1,6 +1,10 @@
 import unittest
+<<<<<<< HEAD
 
 from homework import homework_advanced
+=======
+import homework_advanced
+>>>>>>> 8a4727f6aefd057d74adb81b9ec5fd675d9793a4
 
 
 class TestGenerateAlphabet(unittest.TestCase):
