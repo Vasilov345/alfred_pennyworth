@@ -85,7 +85,7 @@ class MutableImmutableTestCases(unittest.TestCase):
 
     def test_task_5_list_not_mutated_by_func(self):
         l = ["a", "b"]
-        self.assertEqual(homework.task_5_append_str_to_list_and_return(l, "c"), ["a, b, c"])
+        self.assertEqual(homework.task_5_append_str_to_list_and_return(l, "c"), ["a", "b", "c"])
         self.assertEqual(l, ["a", "b"])
 
 
