@@ -40,15 +40,11 @@ def sort_alphabet(data: Alphabet) -> Alphabet:
     """
     res = []
     k = 0
-    for i in data:
-        for v in i.values():
-            while k != 100:
-                k += 1
+    while k <= 100:
+        k += 1
+        for i in data:
+            for v in i.values():
                 if v == k:
                     res.append(i)
     return res
-
-
-
-
 
