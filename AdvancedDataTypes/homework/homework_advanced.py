@@ -1,5 +1,5 @@
 from typing import List, Dict
-import string
+import string, random, operator
 
 Alphabet = List[Dict[str, int]]
 
@@ -20,8 +20,8 @@ def generate_alphabet() -> Alphabet:
         {'t': 57}, {'u': 34}, {'v': 70}, {'w': 13}, {'x': 86}, {'y': 12}, {'z': 82}
     ]
     """
-    pass
-    dict(zip(string.ascii_lowercase, range(0,101)))
+    my_list = [dict([(words, random.randint(0, 100))]) for words in string.ascii_lowercase]
+    return my_list
 
 
 def sort_alphabet(data: Alphabet) -> Alphabet:
