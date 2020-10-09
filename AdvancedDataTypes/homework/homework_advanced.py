@@ -1,3 +1,5 @@
+import random
+
 from typing import List, Dict
 
 Alphabet = List[Dict[str, int]]
@@ -19,7 +21,12 @@ def generate_alphabet() -> Alphabet:
         {'t': 57}, {'u': 34}, {'v': 70}, {'w': 13}, {'x': 86}, {'y': 12}, {'z': 82}
     ]
     """
-    pass
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    alphabet_dict = []
+
+    for key in alphabet:
+        alphabet_dict.append(dict([(key, random.randint(0, 100))]))
+    return alphabet_dict
 
 
 def sort_alphabet(data: Alphabet) -> Alphabet:
@@ -29,4 +36,11 @@ def sort_alphabet(data: Alphabet) -> Alphabet:
         sort_alphabet([{'a': 5}, {'b': 57}, {'c': 23}])
         >>> [{'a': 5}, {'c': 23}, {'b': 57}]
     """
-    pass
+    sorted_list = []
+    sorted_list_dict = []
+    for i in data:
+        sorted_list += list(i.items())
+    sorted_list.sort(key=lambda i: i[1])
+    for i in sorted_list:
+        sorted_list_dict.append(dict([(i[0], i[1])]))
+    return sorted_list_dict
