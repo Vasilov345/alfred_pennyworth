@@ -1,0 +1,40 @@
+*************************
+OOP vs Procedural
+*************************
+1. OOP concept
+Object-oriented Programming, or OOP is a programming paradigm which models real-world entities as software objects,
+which have some data associated with them and can perform certain functions.
+An object has two characteristics: attributes and behavior, for example:
+Parrot is an object, name, age, color are attributes singing and dancing are behavior
+2. Procedural paradigm
+Procedural programing structures a program like a recipe in that it provides a set of steps,
+in the form of functions and code blocks, which flow sequentially in order to complete a task.
+
+The key takeaway is that objects are at the center of the object-oriented programming paradigm,
+not only representing the data, as in procedural programming, but in the overall structure of the program as well.
+
+*************************
+DRY principle
+*************************
+The concept of OOP in Python focuses on creating reusable code.
+This concept is also known as DRY (Don't Repeat Yourself).
+
+*************************
+OOP basic principles
+*************************
+1. Encapsulation
+used to separate interfaces from internal logic of the class.
+Encapsulation allows to restrict access to some methods and variables.
+This prevent data from direct modification.
+In Python, we denote private attribute using underscore as prefix i.e single “ _ “ or double “ __“.
+Aim - interface should not change in case of changes in logic.
+
+2. Inheritance
+Inheritance - The transfer of the characteristics of a class to other classes that are derived from it.
+The newly formed class is a derived class (or child class).
+Similarly, the existing class is a base class (or parent class).
+
+3. Polymorphism
+Polymorphism is an ability (in OOP) to use common interface for multiple form (data types).
+Suppose, we need to color a shape, there are multiple shape option (rectangle, square, circle).
+However we could use same method to color any shape. This concept is called Polymorphism
