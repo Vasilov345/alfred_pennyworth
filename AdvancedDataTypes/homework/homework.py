@@ -20,8 +20,10 @@ def task_2_remove_dict_fields(data: DT, redundant_keys: List[str]) -> DT:
        remove_dict_field([{'name': 'Alex', 'age': 26}, {'name': 'denys', 'age': 89}], 'age')
         >>> [{'name': 'Alex'}, {'name': 'denys'}]
     """
-    rem = [new_l for new_l in data for v in redundant_keys if v == redundant_keys]
-    return rem
+    for dlt in data:
+        for k_v in redundant_keys:
+            dlt.pop(k_v)
+    return data
 
 
 def task_3_find_item_via_value(data: DT, value) -> DT:
@@ -72,4 +74,3 @@ def task_7_insert_2_vars_into_string(age: float, habit: str):
         "I have 10.4 years and I love cars      "
     """
     return f"I have {int(age * 10) / 10} years and I love {habit.ljust(10)[:10]}"
-

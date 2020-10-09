@@ -1,5 +1,6 @@
 from typing import List, Dict
-import string, random, operator
+import string, random
+from operator import itemgetter
 
 Alphabet = List[Dict[str, int]]
 
@@ -12,7 +13,8 @@ def generate_alphabet() -> Alphabet:
     value - random int value from 0 to 100
 
     Examples:
-        generate_alphabet()
+        generate_alphabet()останнє?
+
     >>>
     [
         {'a': 5}, {'b': 57}, {'c': 23}, {'d': 57}, {'e': 88}, {'f': 86}, {'g': 12}, {'h': 41}, {'i': 8}, {'j': 50},
@@ -31,4 +33,5 @@ def sort_alphabet(data: Alphabet) -> Alphabet:
         sort_alphabet([{'a': 5}, {'b': 57}, {'c': 23}])
         >>> [{'a': 5}, {'c': 23}, {'b': 57}]
     """
-    pass
+    return sorted(data, key=lambda el: el[1])
+    #sorted(data.items(), key=itemgetter(1))
