@@ -33,5 +33,5 @@ def sort_alphabet(data: Alphabet) -> Alphabet:
         sort_alphabet([{'a': 5}, {'b': 57}, {'c': 23}])
         >>> [{'a': 5}, {'c': 23}, {'b': 57}]
     """
-    return sorted(data, key=lambda el: el[1])
+    return sorted(data, key=lambda el: el.items())
     #sorted(data.items(), key=itemgetter(1))
