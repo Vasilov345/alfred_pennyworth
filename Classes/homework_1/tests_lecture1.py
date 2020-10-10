@@ -4,12 +4,12 @@ import homework_lecture1
 
 class MagicMethodsTestCases(unittest.TestCase):
 
-    def ttest_custom_int(self):
+    def test_custom_int(self):
         custom_int = homework_lecture1.CustomInt(5)
         self.assertEqual(custom_int, 5)
         self.assertFalse(custom_int < 10)
 
-    def ttest_limited_attrs(self):
+    def test_limited_attrs(self):
         person = homework_lecture1.PersonWithLimitedSkills()
         exc = None
         try:
@@ -20,7 +20,7 @@ class MagicMethodsTestCases(unittest.TestCase):
         person.sleep = "zzz"
         self.assertEqual(person.sleep, "zzz")
 
-    def ttest_hidden_attrs(self):
+    def test_hidden_attrs(self):
         hidden_attrs_obj = homework_lecture1.HiddenAttrs()
         self.assertEqual(dir(hidden_attrs_obj), [])
         self.assertEqual(hidden_attrs_obj.__dict__(), {})
