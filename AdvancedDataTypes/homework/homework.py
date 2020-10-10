@@ -33,6 +33,7 @@ def task_4_return_lambda_sum_2_ints():
 def task_5_append_str_to_list_and_return(data_list, elem_str):
     new_list = [i for i in data_list]
     new_list.append(elem_str)
+    return new_list
 
 
 def task_6_insert_function_result_into_string(func: Callable):
