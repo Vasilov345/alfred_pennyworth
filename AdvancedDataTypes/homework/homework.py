@@ -35,7 +35,7 @@ def task_2_remove_dict_fields(data: DT, redundant_keys: List[str]) -> DT:
     """
     right_em = [new_l for new_l in data for v in redundant_keys if v == redundant_keys]
     return right_em
-    pass
+
 
 
 def task_3_find_item_via_value(data: DT, value) -> DT:
@@ -47,7 +47,6 @@ def task_3_find_item_via_value(data: DT, value) -> DT:
     """
     res = [i for i in data for v in i.values() if v == value]
     return res
-    pass
 
 
 def task_4_return_lambda_sum_2_ints() -> DT:
@@ -55,7 +54,6 @@ def task_4_return_lambda_sum_2_ints() -> DT:
     Return lambda operator which take 2 integer params and returns their sum
     """
     return lambda a, b: a + b
-    pass
 
 
 def task_5_append_str_to_list_and_return(input_data: List, elem: str):
@@ -67,7 +65,6 @@ def task_5_append_str_to_list_and_return(input_data: List, elem: str):
     Return list with the element appended to it.
     But the list itself should not be changed
     """
-    pass
 
 
 def task_6_insert_function_result_into_string(func: Callable):
