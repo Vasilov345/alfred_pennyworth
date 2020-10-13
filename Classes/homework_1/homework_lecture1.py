@@ -21,6 +21,7 @@ class CustomInt(int):
     def __ge__(self, other):
         return False
 
+
 class PersonWithLimitedSkills:
     """
     Make class which is limited to 2 actions - eat and sleep
@@ -52,6 +53,7 @@ class CallableInstances:
     Make class which takes func parameter on initialization, which is a callable that can be passed.
     Then object of this class may be called - callable passed on init will be called with passed parameters.
     """
+
     def __init__(self, param):
         self.param = param
 
