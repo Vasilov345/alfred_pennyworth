@@ -27,11 +27,7 @@ class PersonWithLimitedSkills:
     Any other attributes addition should result in an error.
     """
 
-    def eat(self):
-        print('eat')
-
-    def sleep(self):
-        print('sleep')
+    __slots__ = ('eat', 'sleep')
 
 
 class HiddenAttrs:
