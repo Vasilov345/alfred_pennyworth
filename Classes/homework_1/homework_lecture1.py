@@ -5,28 +5,16 @@ class CustomInt(int):
         super().__init__()
 
     def __ge__(self, other):
-        if self.x <= other:
-            return True
-        if self.x >= other:
-            return False
+        return self.x <= other
 
     def __lt__(self, other):
-        if self.x < other:
-            return False
-        if self.x > other:
-            return True
+        return self.x > other
 
     def __le__(self, other):
-        if self.x <= other:
-            return False
-        if self.x >= other:
-            return True
+        return self.x >= other
 
     def __gt__(self, other):
-        if self.x > other:
-            return False
-        if self.x < other:
-            return True
+        return self.x < other
 
 
 class PersonWithLimitedSkills:
