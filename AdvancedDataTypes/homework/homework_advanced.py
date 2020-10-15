@@ -1,32 +1,46 @@
-from typing import List, Dict
+from typing import List, Dict, Union, Callable
 
-Alphabet = List[Dict[str, int]]
-
-
-def generate_alphabet() -> Alphabet:
-    """
-    Generate list of dicts.
-    Where each dict contain 1 pair of key/value
-    key - letter from alphabet
-    value - random int value from 0 to 100
-
-    Examples:
-        generate_alphabet()
-    >>>
-    [
-        {'a': 5}, {'b': 57}, {'c': 23}, {'d': 57}, {'e': 88}, {'f': 86}, {'g': 12}, {'h': 41}, {'i': 8}, {'j': 50},
-        {'k': 1}, {'l': 61}, {'m': 79}, {'n': 69}, {'o': 3}, {'p': 30}, {'q': 75}, {'r': 70}, {'s': 9},
-        {'t': 57}, {'u': 34}, {'v': 70}, {'w': 13}, {'x': 86}, {'y': 12}, {'z': 82}
-    ]
-    """
-    pass
+ST = Dict[str, Union[str, int]]
+DT = List[ST]
 
 
-def sort_alphabet(data: Alphabet) -> Alphabet:
-    """
-    Sort incoming alphabet by int values.
-    Examples:
-        sort_alphabet([{'a': 5}, {'b': 57}, {'c': 23}])
-        >>> [{'a': 5}, {'c': 23}, {'b': 57}]
-    """
-    pass
+def task_1_fix_names_start_letter(data: DT) -> DT:
+    for first_name in data:
+        try:
+            first_name["name"] = first_name["name"].capitalize()
+        except KeyError:
+            "name"
+    return data
+
+
+def task_2_remove_dict_fields(data: DT, redundant_keys: List[str]) -> DT:
+    for data_member in data:
+        for k in redundant_keys:
+            del data_member[k]
+    return data
+
+
+def task_3_find_item_via_value(data: DT, value) -> DT:
+    newline_cinema = []
+    for dta_line in data:
+        for key in dta_line:
+            if dta_line[key] == value:
+                newline_cinema.append(dta_line)
+    return newline_cinema
+
+
+def task_4_return_lambda_sum_2_ints():
+    return lambda x, y: x + y
+
+
+def task_5_append_str_to_list_and_return(input_data: List, elem: str):
+    for jack in elem:
+        return input_data + [jack]
+
+
+def task_6_insert_function_result_into_string(func: Callable):
+    return f'start {func()} finish'
+
+
+def task_7_insert_2_vars_into_string(age: float, habit: str):
+    return f'I have {int(age * 10) / 10} years and I love {habit.ljust(10)[:10]}'
