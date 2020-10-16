@@ -85,5 +85,5 @@ def task_7_insert_2_vars_into_string(age: float, habit: str):
     Examples:
         "I have 10.4 years and I love cars      "
     """
-    age = int(age10)/10
+    age = int(age*10)/10
     return f"I have {age} years and I love {habit.ljust(10)[:10]}"
