@@ -3,9 +3,7 @@ from typing import List, Dict, Union, Callable
 
 def task_1_fix_names_start_letter(dicti):
     for di in dicti:
-        if 'name' in di.keys():
-            if di['name'].lower():
-                di['name'] = di['name'].title()
+        di['name'] = di['name'].title()
     return dicti
 
 def task_2_remove_dict_fields(data, redundant_keys):
