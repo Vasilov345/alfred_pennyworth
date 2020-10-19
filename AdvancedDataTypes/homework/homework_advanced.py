@@ -1,32 +1,27 @@
 from typing import List, Dict
+import random 
+import string
+import operator
 
 Alphabet = List[Dict[str, int]]
 
 
 def generate_alphabet() -> Alphabet:
-    """
-    Generate list of dicts.
-    Where each dict contain 1 pair of key/value
-    key - letter from alphabet
-    value - random int value from 0 to 100
+    
+    #Alphabet =[]
+    #for latter in string.ascii_lowercase:
+     #   Alphabet.append(dict([(latter, random.randint(0, 100))]))
+    #return Alphabet
 
-    Examples:
-        generate_alphabet()
-    >>>
-    [
-        {'a': 5}, {'b': 57}, {'c': 23}, {'d': 57}, {'e': 88}, {'f': 86}, {'g': 12}, {'h': 41}, {'i': 8}, {'j': 50},
-        {'k': 1}, {'l': 61}, {'m': 79}, {'n': 69}, {'o': 3}, {'p': 30}, {'q': 75}, {'r': 70}, {'s': 9},
-        {'t': 57}, {'u': 34}, {'v': 70}, {'w': 13}, {'x': 86}, {'y': 12}, {'z': 82}
-    ]
-    """
-    pass
+    return ([dict([(words, random.randint(0, 100))]) for words in string.ascii_lowercase])
 
 
 def sort_alphabet(data: Alphabet) -> Alphabet:
-    """
-    Sort incoming alphabet by int values.
-    Examples:
-        sort_alphabet([{'a': 5}, {'b': 57}, {'c': 23}])
-        >>> [{'a': 5}, {'c': 23}, {'b': 57}]
-    """
-    pass
+    Alphabet_sort =[]
+    list_1 =[]
+    for i in data:
+        list_1 += i.items()
+    list_1.sort(key=lambda x: x[1])
+    for i in list_1:
+        Alphabet_sort.append(dict([(i[0], i[1])]))
+    return Alphabet_sort
