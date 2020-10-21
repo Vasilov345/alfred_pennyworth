@@ -29,9 +29,10 @@ def task_4_return_lambda_sum_2_ints():
     return lambda x, y: x + y
 
 
-def task_5_append_str_to_list_and_return(input_data: object, elem: object) -> object:
-    for jack in elem:
-        return input_data + [jack]
+def task_5_append_str_to_list_and_return(input_data: List, elem: str):
+    ap_str = input_data.copy()
+    ap_str.append(elem)
+    return ap_str
 
 
 def task_6_insert_function_result_into_string(func: Callable):
