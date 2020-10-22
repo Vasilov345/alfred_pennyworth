@@ -1,3 +1,5 @@
+import dataclasses
+
 class Maths:
     """
     Make class with one method "add_num" with 2 parameters, which returns sum of these parameters.
@@ -60,12 +62,10 @@ class Concert:
             self._visitors_count = value
 
 
-#class BookDataclass:
+class BookDataclass:
     """
     Create dataclass with 3 fields - title (str), author (str), pages_num (int)
     """
-
-    class BookDataclass:
     @dataclasses.dataclass()
     title: str
     author: str
