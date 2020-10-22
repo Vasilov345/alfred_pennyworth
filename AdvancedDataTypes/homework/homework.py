@@ -41,3 +41,5 @@ def task_6_insert_function_result_into_string(func: Callable):
 
 def task_7_insert_2_vars_into_string(age: float, habit: str):
     return f'I have {int(age * 10) / 10} years and I love {habit.ljust(10)[:10]}'
+
+#HW3 homework.py
