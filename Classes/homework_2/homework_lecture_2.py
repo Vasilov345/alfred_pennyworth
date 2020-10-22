@@ -1,5 +1,3 @@
-import dataclasses
-
 class Maths:
     """
     Make class with one method "add_num" with 2 parameters, which returns sum of these parameters.
