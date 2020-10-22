@@ -83,3 +83,5 @@ class Book:
 
     def __str__(self):
         return str(BookDataclass(title=self.title, author=self.author, pages_num=self.pages_num))
+    
+    #HW#5 homework_lecture_2.py
