@@ -8,13 +8,6 @@ from random import randint
 
 from uuid import uuid4
 
-class jungle(TestJungle):
-    def test_jungle(self, test_jungle: Any) -> None
-
-        parts: ['test_jungle. TestJungle']
-    error_case: None
-    error_message: None
-    jungle: Any = __import__(TestJungle())
 
 class Animal(ABC):
 
@@ -40,7 +33,9 @@ class Predator(Animal):
     def eat(self, jungle: Jungle):
         pass
 
+    def animal_generator() -> AnyAnimal\
 
+        n
 class Herbivorous(Animal):
 
     def __init__(self, power: int, speed: int):
@@ -71,7 +66,10 @@ class Jungle(AnyAnimal):
         pass
 
 
-def animal_generator() -> AnyAnimal
+def animal_generator() -> AnyAnimal\
+
+
+    n
 pass
 
 jungle_unit = Predator()
