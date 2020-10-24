@@ -2,32 +2,56 @@ from __future__ import annotations
 
 from typing import Dict, Any
 
+from abc import ABC, abstractmethod
 
-class Animal:
+from random import randint
+
+from uuid import uuid4
+
+
+# my test of jungle iOk
+
+class Animal(ABC):
+
+    def __init__(self):
+        self.id = str(uuid4())
+        self.max_power = randint(20, 100)
+        self.current_power = self.max_power
+        self.speed = randint(20, 100)
+
+    @abstractmethod()
+    def eat(self, jungle: Jungle):
+        pass
+
+
+class Predator(Animal):
 
     def __init__(self, power: int, speed: int):
-        self.id = None
+        self.max_power = power
+        self.current_power = power
+        self.speed = speed
+
+        pass
+
+    def eat(self, jungle: Jungle):
+        pass
+
+
+class Herbivorous(Animal):
+
+    def __init__(self, power: int, speed: int):
         self.max_power = power
         self.current_power = power
         self.speed = speed
 
     def eat(self, jungle: Jungle):
+        percent_40 = self.current_power * 0, 4
+        if self.max_power - self.current_power == percent_40:
+            self.current_power = self.current_power + percent_40
         pass
 
 
-class Predator:
-
-    def eat(self, jungle: Jungle):
-        pass
-
-
-class Herbivorous:
-
-    def eat(self, jungle: Jungle):
-        pass
-
-
-AnyAnimal = Any[Herbivorous, Predator]
+AnyAnimal = None  # Any[Herbivorous, Predator]
 
 
 class Jungle:
@@ -42,9 +66,12 @@ class Jungle:
         pass
 
 
-def animal_generator():
-    pass
+def animal_generator() -
 
+-> AnyAnimal
+pass
+
+jungle_unit = Predator()
 
 if __name__ == "__main__":
     # Create jungle
@@ -53,3 +80,6 @@ if __name__ == "__main__":
     # Iterate throw jungle and force animals to eat until no predators left
     # animal_generator to create a random animal
     pass
+
+jungle1_unit = Predator(randint(20, 100), randint(20, 100))
+print(jungle1_unit.max_power, jungle1_unit.speed)
