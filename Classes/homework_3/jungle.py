@@ -8,12 +8,17 @@ from random import randint
 
 from uuid import uuid4
 
+class jungle(TestJungle):
+    def test_jungle(self, test_jungle: Any) -> None
 
-# my test of jungle iOk
+        parts: ['test_jungle. TestJungle']
+    error_case: None
+    error_message: None
+    jungle: Any = __import__(TestJungle())
 
 class Animal(ABC):
 
-    def __init__(self):
+    def __init__(self) -> uuid4():
         self.id = str(uuid4())
         self.max_power = randint(20, 100)
         self.current_power = self.max_power
@@ -26,12 +31,11 @@ class Animal(ABC):
 
 class Predator(Animal):
 
-    def __init__(self, power: int, speed: int):
+    def __init__(self, power: AnyAnimal, speed: AnyAnimal) -> AnyAnimal:
+        super().__init__()
         self.max_power = power
         self.current_power = power
         self.speed = speed
-
-        pass
 
     def eat(self, jungle: Jungle):
         pass
@@ -40,6 +44,7 @@ class Predator(Animal):
 class Herbivorous(Animal):
 
     def __init__(self, power: int, speed: int):
+        super().__init__()
         self.max_power = power
         self.current_power = power
         self.speed = speed
@@ -54,7 +59,7 @@ class Herbivorous(Animal):
 AnyAnimal = None  # Any[Herbivorous, Predator]
 
 
-class Jungle:
+class Jungle(AnyAnimal):
 
     def __init__(self):
         self.animals: Dict[str, AnyAnimal] = dict()
@@ -66,9 +71,7 @@ class Jungle:
         pass
 
 
-def animal_generator() -
-
--> AnyAnimal
+def animal_generator() -> AnyAnimal
 pass
 
 jungle_unit = Predator()
