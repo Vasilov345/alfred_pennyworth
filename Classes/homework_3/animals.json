@@ -1,0 +1,16 @@
+{
+  animals: [
+    {
+      "speed": 100,
+      "power": 120
+    },
+    {
+      "speed": 100,
+      "power": 120
+    },
+    {
+      "speed": 100,
+      "power": 120
+    }
+  ]
+}
