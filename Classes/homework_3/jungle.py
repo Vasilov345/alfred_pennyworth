@@ -8,7 +8,6 @@ from random import randint
 
 from uuid import uuid4
 
-
 class Animal(ABC):
 
     def __init__(self):
@@ -68,9 +67,22 @@ class Jungle:
         pass
 
 
-def animal_generator() -> AnyAnimal:
-    pass
+animal_lst = []
 
+
+def animal_generator() -> AnyAnimal:
+    for i in range(10):
+        if i <= 4:
+            i = Predator(randint(20, 100), randint(20, 100))
+    return animal_lst
+
+
+animal_generator()
+for param in animal_lst:
+    unique_id = str(uuid4())
+    print((f"Animal power: {animal_lst[i].max_power} Animal speed: {animal_lst[i].speed} ID: {unique_id}"))
+
+print("test")
 
 if __name__ == "__main__":
     pass
