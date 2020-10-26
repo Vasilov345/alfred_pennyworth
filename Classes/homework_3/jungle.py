@@ -1,29 +1,30 @@
 from __future__ import annotations
-import jungle
-from abc import ABC, abstractmethod
-from random import randint
-from uuid import uuid4
-from typing import List, Dict
 
-animal = List[Dict[str, int]]
+from typing import Dict, Any
+
+from abc import ABC, abstractmethod
+
+from random import randint
+
+from uuid import uuid4
 
 
 class Animal(ABC):
-    @abstractmethod()
-    def __init__(self) -> uuid4():
+
+    def __init__(self):
         self.id = str(uuid4())
         self.max_power = randint(20, 100)
         self.current_power = self.max_power
         self.speed = randint(20, 100)
 
+    @abstractmethod()
     def eat(self, jungle: Jungle):
         pass
 
 
 class Predator(Animal):
 
-    def __init__(self, power: AnyAnimal, speed: AnyAnimal) -> AnyAnimal:
-        super().__init__()
+    def __init__(self, power: int, speed: int):
         self.max_power = power
         self.current_power = power
         self.speed = speed
@@ -31,12 +32,10 @@ class Predator(Animal):
     def eat(self, jungle: Jungle):
         pass
 
-    def animal_generator() -> AnyAnimal
 
 class Herbivorous(Animal):
 
     def __init__(self, power: int, speed: int):
-        super().__init__()
         self.max_power = power
         self.current_power = power
         self.speed = speed
@@ -47,10 +46,14 @@ class Herbivorous(Animal):
             self.current_power = self.current_power + percent_40
         pass
 
-    AnyAnimal = None  # Any[Herbivorous, Predator]
+
+AnyAnimal = None
 
 
-class Jungle(AnyAnimal):
+# Any[Herbivorous, Predator]
+
+
+class Jungle:
 
     def __init__(self):
         self.animals: Dict[str, AnyAnimal] = dict()
@@ -61,34 +64,19 @@ class Jungle(AnyAnimal):
     def remove_animal(self, animal: AnyAnimal):
         pass
 
-    def animal_generator() -> AnyAnimal
-
+    def __iter__(self):
         pass
 
-    if __name__ == "__main__":
-        jungle_unit = Predator()
-        jungle1_unit = Predator(randint(20, 100), randint(20, 100))
-        print(jungle1_unit.max_power, jungle1_unit.speed)
+
+def animal_generator() -> AnyAnimal:
     pass
 
-    if __name__ == "__main__"
-        nature = animal_generator()
-        jungle = Jungle()
 
-        for i in range(10):
-            animal = next(nature)
-        jungle.add_animal(animal)
+if __name__ == "__main__":
+    pass
 
-
-while True:
-    if not jungle.any_predator_left():
-        break
-
-    for animal in jungle:
-        animal.eat(jungle=jungle)
-    time.sleep(1)
-
-
+jungle1_unit = Predator(randint(20, 100), randint(20, 100))
+print(jungle1_unit.max_power, jungle1_unit.speed)
 
 # Create jungle
 # Create few animals
