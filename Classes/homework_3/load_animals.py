@@ -26,3 +26,10 @@ dog = Animal(20, 50)
 true_animals: List[Animal] = []
 true_animals = [Animal(power=i['power'], speed=i['speed']) for i in animals_json]
 print(true_animals)
+
+with open("animals.json", 'r') as f:
+    result = f.readlines()
+    print(f'List of animals in animals.json {type(result)}: {result}')
+
+main_path = "dir_with_files"
+path = os.path.join(main_path, "animals.json")
