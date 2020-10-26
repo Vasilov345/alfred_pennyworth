@@ -1,3 +1,5 @@
+import json
+
 with open('animals.json', 'r') as f:
     animals_json = json.load(f)
     animals_json = Animal['animals']
