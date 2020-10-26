@@ -1,4 +1,5 @@
 with open('animals.json', 'r') as f:
+    animals_json = json.load(f)
     animals_json = Animal['animals']
     print(animals_json)
 
@@ -16,13 +17,9 @@ class Animal:
         return f"Animal {self.power} {self.speed}"
 
 
-cat = Animal(20, 40)
-
-
-class List(Animal):
-
-
-    pass
+dog = Animal(20, 50)
+# class List(Animal):
+# pass
 
 true_animals: List[Animal] = []
 true_animals = [Animal(power=i['power'], speed=i['speed']) for i in animals_json]
