@@ -1,15 +1,30 @@
+import json
+
+tiger = {
+  "Animal": "Predator",
+  "Power": "100",
+  "Speed": "70"
+}
+
+json_dumps = json.dumps(tiger)
+print(f"Json dumps type: {type(json_dumps)} value: {json_dumps}")
+
+
+
+horse = Herbivorous(power=100, speed=100)}
+
 {
-  animals: [
-    {
-      "speed": 100,
-      "power": 120
-    },
-    {
-      "speed": 100,
-      "power": 120
-    },
-    {
-      "speed": 100,
+"animals": [
+{
+"speed": 100,
+"power": 120
+},
+{
+"speed": 100,
+"power": 120
+},
+{
+"speed": 100,
       "power": 120
     }
   ]
