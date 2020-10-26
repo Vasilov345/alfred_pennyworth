@@ -10,7 +10,7 @@ from uuid import uuid4
 
 class Animal(ABC):
 
-    def __init__(self):
+    def __init__(self, power: int, speed: int):
         self.id = str(uuid4())
         self.max_power = randint(20, 100)
         self.current_power = self.max_power
@@ -70,17 +70,23 @@ class Jungle:
 animal_lst = []
 
 
-def animal_generator() -> AnyAnimal:
+def animal_generator():
     for i in range(10):
         if i <= 4:
             i = Predator(randint(20, 100), randint(20, 100))
+            animal_lst.append((i))
+        else:
+            i = Herbivorous(randint(20, 100), randint(20, 100))
+            animal_lst.append(i)
     return animal_lst
 
 
 animal_generator()
-for param in animal_lst:
+
+for step_animal in animal_lst:
     unique_id = str(uuid4())
-    print((f"Animal power: {animal_lst[i].max_power} Animal speed: {animal_lst[i].speed} ID: {unique_id}"))
+    step_animal.id = str(uuid4())
+    print((f" Animal power: {animal_lst[i].max_power} Animal speed: {animal_lst[i].speed} ID: {unique_id}"))
 
 print("test")
 

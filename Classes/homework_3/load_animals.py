@@ -2,7 +2,7 @@ import json
 
 with open('animals.json', 'r') as f:
     animals_json = json.load(f)
-    animals_json = Animal['animals']
+    animals_json = animals_json['animals']
     print(animals_json)
 
 
@@ -24,12 +24,12 @@ dog = Animal(20, 50)
 # pass
 
 true_animals: List[Animal] = []
-true_animals = [Animal(power=i['power'], speed=i['speed']) for i in animals_json]
+true_animals = [Animal(power=, speed=) for i in animals_json
 print(true_animals)
 
 with open("animals.json", 'r') as f:
     result = f.readlines()
-    print(f'List of animals in animals.json {type(result)}: {result}')
+print(f'List of animals in animals.json {type(result)}: {result}')
 
 main_path = "dir_with_files"
 path = os.path.join(main_path, "animals.json")

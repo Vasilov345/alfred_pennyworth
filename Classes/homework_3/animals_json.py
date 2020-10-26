@@ -9,7 +9,6 @@ tiger = {
 json_dumps = json.dumps(tiger)
 print(f"Json dumps type: {type(json_dumps)} value: {json_dumps}")
 
-
 horse = {
   "Animal": "Herbivorous",
   "Power": "100",
@@ -19,7 +18,6 @@ horse = {
 json_dumps = json.dumps(horse)
 print(f"Json dumps type: {type(json_dumps)} value: {json_dumps}")
 
-
 dog = {
   "Animal": "Predator",
   "Power": "10",
@@ -28,7 +26,6 @@ dog = {
 
 json_dumps = json.dumps(dog)
 print(f"Json dumps type: {type(json_dumps)} value: {json_dumps}")
-
 
 elephant = {
   "Animal": "Herbivorous",
