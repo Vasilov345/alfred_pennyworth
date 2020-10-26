@@ -1,5 +1,7 @@
 import unittest
 
+from jungle import Animal, Herbivorous, Predator, Jungle
+
 
 class TestBaseAnimal(unittest.TestCase):
 

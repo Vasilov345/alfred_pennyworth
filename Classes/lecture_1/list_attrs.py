@@ -15,7 +15,6 @@
 # - If no parameters are passed it returns a list of names in the current local scope.
 
 dir()
-import random
 
 # now random is added into current local scope
 dir()

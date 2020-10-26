@@ -1,23 +1,21 @@
 from __future__ import annotations
-
-from typing import Dict, Any
-
+import jungle
 from abc import ABC, abstractmethod
-
 from random import randint
-
 from uuid import uuid4
+from typing import List, Dict
+
+animal = List[Dict[str, int]]
 
 
 class Animal(ABC):
-
+    @abstractmethod()
     def __init__(self) -> uuid4():
         self.id = str(uuid4())
         self.max_power = randint(20, 100)
         self.current_power = self.max_power
         self.speed = randint(20, 100)
 
-    @abstractmethod()
     def eat(self, jungle: Jungle):
         pass
 
@@ -33,9 +31,8 @@ class Predator(Animal):
     def eat(self, jungle: Jungle):
         pass
 
-    def animal_generator() -> AnyAnimal\
+    def animal_generator() -> AnyAnimal
 
-        n
 class Herbivorous(Animal):
 
     def __init__(self, power: int, speed: int):
@@ -50,8 +47,7 @@ class Herbivorous(Animal):
             self.current_power = self.current_power + percent_40
         pass
 
-
-AnyAnimal = None  # Any[Herbivorous, Predator]
+    AnyAnimal = None  # Any[Herbivorous, Predator]
 
 
 class Jungle(AnyAnimal):
@@ -65,22 +61,37 @@ class Jungle(AnyAnimal):
     def remove_animal(self, animal: AnyAnimal):
         pass
 
+    def animal_generator() -> AnyAnimal
 
-def animal_generator() -> AnyAnimal\
+        pass
 
-
-    n
-pass
-
-jungle_unit = Predator()
-
-if __name__ == "__main__":
-    # Create jungle
-    # Create few animals
-    # Add animals to jungle
-    # Iterate throw jungle and force animals to eat until no predators left
-    # animal_generator to create a random animal
+    if __name__ == "__main__":
+        jungle_unit = Predator()
+        jungle1_unit = Predator(randint(20, 100), randint(20, 100))
+        print(jungle1_unit.max_power, jungle1_unit.speed)
     pass
 
-jungle1_unit = Predator(randint(20, 100), randint(20, 100))
-print(jungle1_unit.max_power, jungle1_unit.speed)
+    if __name__ == "__main__"
+        nature = animal_generator()
+        jungle = Jungle()
+
+        for i in range(10):
+            animal = next(nature)
+        jungle.add_animal(animal)
+
+
+while True:
+    if not jungle.any_predator_left():
+        break
+
+    for animal in jungle:
+        animal.eat(jungle=jungle)
+    time.sleep(1)
+
+
+
+# Create jungle
+# Create few animals
+# Add animals to jungle
+# Iterate throw jungle and force animals to eat until no predators left
+# animal_generator to create a random animal
