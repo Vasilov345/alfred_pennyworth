@@ -1,4 +1,5 @@
 import json
+import sys
 
 tiger = {
     "Animal": "Predator",
@@ -35,3 +36,4 @@ elephant = {
 
 json_dumps = json.dumps(elephant)
 print(f"Json dumps type: {type(json_dumps)} value: {json_dumps}")
+

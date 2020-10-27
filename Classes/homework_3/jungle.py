@@ -90,8 +90,8 @@ for step_animal in animal_lst:
 
 print("test")
 
-jungle1_unit = Predator(randint(20, 100), randint(20, 100))
-print(jungle1_unit.max_power, jungle1_unit.speed)
+# jungle1_unit = Predator(randint(20, 100), randint(20, 100))
+# print(jungle1_unit.max_power, jungle1_unit.speed)
 
 # Create jungle
 # Create few animals
