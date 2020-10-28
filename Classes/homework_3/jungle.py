@@ -5,6 +5,7 @@ from typing import Dict, Any
 import uuid
 import random
 
+
 class Animal(ABC):
     def __init__(self, power: int, speed: int):
         self.id = str(uuid.uuid4())
@@ -22,16 +23,19 @@ class Animal(ABC):
         else:
             self.current_power = power
 
+
 class Predator(Animal):
     def eat(self, jungle: Jungle):
         victim_key = self.choose_victim(jungle)
         if self.id == victim_key:
-            return print(self.id, 'Bad day')
+            print(self.id, 'Bad day')
+            return
         victim: Any[Predator, Herbivorous] = jungle.animals[victim_key]
         if self.speed <= victim.speed or self.current_power <= victim.current_power:
             self.set_power(int(self.current_power * 0.7))
             victim.set_power(int(victim.current_power * 0.7))
-            return print(self.id, 'You`re so weak and lost 30% of your power!')
+            print(self.id, 'You`re so weak and lost 30% of your power!')
+            return
 
         victim.set_power(0)  # Self is stronger and faster than his victim... kill him!
         self.set_power(int(self.current_power * 1.3))
@@ -41,9 +45,11 @@ class Predator(Animal):
         keys = jungle.animals.keys()
         return random.choice(list(keys))
 
+
 class Herbivorous(Animal):
     def eat(self, jungle: Jungle):
         self.set_power(int(self.current_power * 1.4))
+
 
 # AnyAnimal = Any[Herbivorous, Predator]
 
@@ -74,6 +80,7 @@ class Jungle:
     def __iter__(self):
         return self.animals.__iter__()
 
+
 def animal_generator(max_animals: int):
     animals = [Predator, Herbivorous]
     for i in range(0, max_animals):
@@ -90,7 +97,8 @@ if __name__ == "__main__":
 
     while jungle.animals:
         # if there is no predator or only one predator left in jungle then finish game
-        if not jungle.any_predator_left() or (len(jungle.animals) == 1 and jungle.animals.values()[0].__class__.__name__ == "Predator"):
+        if not jungle.any_predator_left() or (
+                len(jungle.animals) == 1 and jungle.animals.values()[0].__class__.__name__ == "Predator"):
             print('The end')
             break
 
@@ -102,5 +110,5 @@ if __name__ == "__main__":
 
         time.sleep(1)
         print('---------------------------')
-        for animalP in jungle.animals.values():
-          print(animalP.__class__.__name__, animalP.id, animalP.current_power, animalP.speed)
+        for animal in jungle.animals.values():
+            print(animal.__class__.__name__, animal.id, animal.current_power, animal.speed)
