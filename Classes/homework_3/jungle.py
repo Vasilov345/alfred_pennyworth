@@ -4,6 +4,7 @@ import time
 from typing import Dict, Any
 import uuid
 import random
+import csv
 
 
 class Animal(ABC):
@@ -16,6 +17,7 @@ class Animal(ABC):
     @abstractmethod
     def eat(self, jungle: Jungle):
         pass
+
 
     def set_power(self, power: int):
         if power > self.max_power:
@@ -50,8 +52,6 @@ class Herbivorous(Animal):
     def eat(self, jungle: Jungle):
         self.set_power(int(self.current_power * 1.4))
 
-
-# AnyAnimal = Any[Herbivorous, Predator]
 
 class Jungle:
     def __init__(self):
@@ -90,25 +90,52 @@ def animal_generator(max_animals: int):
 
 if __name__ == "__main__":
     jungle = Jungle()
+
+    filename = 'csv_jungle.csv'
+    # convert my jungle to csv file (Dict format)
+    try:
+        with open(filename, 'w', newline='') as csv_files:
+            fieldnames = ['name', 'id', 'power', 'speed']
+            writer = csv.DictWriter(csv_files, fieldnames=fieldnames)
+            writer.writeheader()
+            for item in animal_generator(10):
+                writer.writerow({'name': item.__class__.__name__, 'id': item.id, 'power': item.current_power,
+                                 'speed': item.speed})
+    except BaseException as e:
+        print('BaseException:', filename)
+    else:
+        print('Data has been loaded successfully !')
+
+    #Load my jungle(animals) from csv file and print
     print('List of animals:')
-    for animal in animal_generator(5):
-        jungle.add_animal(animal)
-        print(animal.__class__.__name__, animal.id, animal.current_power, animal.speed)
+    with open('csv_jungle.csv') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for item in reader:
+            if item['name'] == 'Predator':
+                animal = Predator(0, 0)
+            else:
+                animal = Herbivorous(0, 0)
+            animal.id = item['id']
+            animal.speed = int(item['speed'])
+            animal.max_power = int(item['power'])
+            animal.current_power = int(item['power'])
+            jungle.add_animal(animal)
 
     while jungle.animals:
         # if there is no predator or only one predator left in jungle then finish game
         if not jungle.any_predator_left() or (
-                len(jungle.animals) == 1 and jungle.animals.values()[0].__class__.__name__ == "Predator"):
+                len(jungle.animals) == 1 and list(jungle.animals.values())[0].__class__.__name__ == "Predator"):
             print('The end')
             break
 
+        #Game start
         print('Start eating!')
         for animal in jungle.animals.values():
             if animal.current_power > 0:
                 animal.eat(jungle)
         jungle.clear_dead_animals()
 
-        time.sleep(1)
+        time.sleep(0.5)
         print('---------------------------')
         for animal in jungle.animals.values():
             print(animal.__class__.__name__, animal.id, animal.current_power, animal.speed)

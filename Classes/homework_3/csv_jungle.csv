@@ -1,0 +1,11 @@
+name,id,power,speed
+Predator,d55848c7-e533-4415-bb17-f90cf0724fa8,32,62
+Herbivorous,9c65db3e-e318-43cb-9f03-c8865088120e,41,20
+Herbivorous,747d59c1-c307-4bb3-a2e5-f87a026db968,87,80
+Predator,0aada5bf-02d3-439b-ad17-e0012f4b4cd6,24,69
+Herbivorous,685eb2a7-6ae4-44d0-87af-ac70387b091a,26,97
+Predator,55398015-6dd3-4424-982e-5b04a4959ab1,82,98
+Herbivorous,bc76929a-224c-418f-87ff-da86f9779e3f,65,91
+Predator,062bc3db-07c3-449e-8ab4-bfd43a3972a3,31,26
+Herbivorous,f0525090-db91-435b-a3ae-9ec143d6c67d,33,34
+Herbivorous,bfeda24f-773e-4b25-8b85-a20251d7ef3b,86,52
