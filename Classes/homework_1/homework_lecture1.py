@@ -6,30 +6,18 @@ class CustomInt(int):
     ** try to achieve this without __init__ rewriting
     """
 
-    def __init__(self, a):
-        self.a = a
-
+    def __gt__(self, other):
+        return False
 
     def __lt__(self, other):
-        if isinstance(other, (int, float)):
-            if self.a < other:
-                return False
-
+        return False
 
     def __le__(self, other):
-        if isinstance(other, (int, float)):
-            if self.a <= other:
-                return False
+        return False
 
     def __ge__(self, other):
-        if isinstance(other, (int, float)):
-            if self.a >= other:
-                return False
+        return False
 
-    def __gt__(self, other):
-        if isinstance(other, (int, float)):
-            if self.a > other:
-                return False
 
 class PersonWithLimitedSkills:
     """
@@ -76,5 +64,5 @@ class CallableInstances:
     def __init__(self, func):
         self.func = func
 
-    def __call__(self, *args, **kwargs):
-        return self.func(*args, **kwargs)
+    def __call__(self, a):
+        return self.func(a)
