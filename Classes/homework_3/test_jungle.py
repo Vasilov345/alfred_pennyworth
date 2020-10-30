@@ -30,7 +30,7 @@ class TestHerbivorous(unittest.TestCase):
         self.jungle.add_animal(elephant)
         elephant.current_power = 50
         elephant.eat(self.jungle)
-        self.assertEqual(elephant.current_power, 90)
+        self.assertEqual(elephant.current_power, 70)  # Change 90 to 70, because 50 + 40% = 70
 
     def test_current_power_should_not_be_over_max(self):
         elephant = Herbivorous(power=100, speed=70)
