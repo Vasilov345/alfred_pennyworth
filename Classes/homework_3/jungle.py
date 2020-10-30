@@ -1,12 +1,30 @@
-from __future__ import annotations
+from future import annotations
 
 from typing import Dict, Any
 
+from abc import ABC, abstractmethod
 
-class Animal:
+from random import randint
+
+from uuid import uuid4
+
+
+class Animal(ABC):
 
     def __init__(self, power: int, speed: int):
-        self.id = None
+        self.id = str(uuid4())
+        self.max_power = randint(20, 100)
+        self.current_power = self.max_power
+        self.speed = randint(20, 100)
+
+    @abstractmethod()
+    def eat(self, jungle: Jungle):
+        pass
+
+
+class Predator(Animal):
+
+    def __init__(self, power: int, speed: int):
         self.max_power = power
         self.current_power = power
         self.speed = speed
@@ -15,41 +33,11 @@ class Animal:
         pass
 
 
-class Predator:
+class Herbivorous(Animal):
 
-    def eat(self, jungle: Jungle):
-        pass
+    def __init__(self, power: int, speed: int):
+        self.max_power = power
+        self.current_power = power
+        self.speed = speed
 
-
-class Herbivorous:
-
-    def eat(self, jungle: Jungle):
-        pass
-
-
-AnyAnimal = Any[Herbivorous, Predator]
-
-
-class Jungle:
-
-    def __init__(self):
-        self.animals: Dict[str, AnyAnimal] = dict()
-
-    def add_animal(self, animal: AnyAnimal):
-        pass
-
-    def remove_animal(self, animal: AnyAnimal):
-        pass
-
-
-def animal_generator():
-    pass
-
-
-if __name__ == "__main__":
-    # Create jungle
-    # Create few animals
-    # Add animals to jungle
-    # Iterate throw jungle and force animals to eat until no predators left
-    # animal_generator to create a random animal
-    pass
+    def eat(self, jungle: Jungle)

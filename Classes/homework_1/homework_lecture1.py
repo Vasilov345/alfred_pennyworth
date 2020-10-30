@@ -6,17 +6,28 @@ class CustomInt(int):
     ** try to achieve this without __init__ rewriting
     """
 
-    def __gt__(self, other):
-        return False
+    def __init__(self, a):
+        self.a = a
 
     def __lt__(self, other):
-        return False
+        if isinstance(other, (int, float)):
+            if self.a < other:
+                return False
 
     def __le__(self, other):
-        return False
+        if isinstance(other, (int, float)):
+            if self.a <= other:
+                return False
 
     def __ge__(self, other):
-        return False
+        if isinstance(other, (int, float)):
+            if self.a >= other:
+                return False
+
+    def __gt__(self, other):
+        if isinstance(other, (int, float)):
+            if self.a > other:
+                return False
 
 
 class PersonWithLimitedSkills:
@@ -66,3 +77,15 @@ class CallableInstances:
 
     def __call__(self, a):
         return self.func(a)
+
+
+class CallableInstances:
+    """
+    Make class which takes func parameter on initialization, which is a callable that can be passed.
+    Then object of this class may be called - callable passed on init will be called with passed parameters.
+    """
+    def __init__(self, func):
+        self.func = func
+
+    def __call__(self, *args, **kwargs):
+        return self.func(*args, **kwargs)
