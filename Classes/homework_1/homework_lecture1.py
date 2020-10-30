@@ -6,17 +6,20 @@ class CustomInt(int):
     ** try to achieve this without __init__ rewriting
     """
 
-    def __gt__(self, other):
-        return False
-
-    def __lt__(self, other):
-        return False
-
-    def __le__(self, other):
-        return False
+    def __init__(self, custom_int: Any) -> None
+        self.custom_int = custom_int
 
     def __ge__(self, other):
-        return False
+        return self.custom_int <= other.custom_int
+
+    def __gt__(self, other):
+        return self.custom_int < other.custom_int
+
+    def __le__(self, other):
+        return self.custom_int >= other.custom_int
+
+    def __lt__(self, other):
+        return self.custom_int > self.custom_int
 
 
 class PersonWithLimitedSkills:
@@ -24,22 +27,7 @@ class PersonWithLimitedSkills:
     Make class which is limited to 2 actions - eat and sleep
     Any other attributes addition should result in an error.
     """
-
-    def __init__(self):
-        self.__dict__['eat'] = 'eating'
-        self.__dict__['sleep'] = 'sleeping'
-
-    def __setattr__(self, name, value):
-        if name in self.__dict__:
-            super(PersonWithLimitedSkills, self).__setattr__(name, value)
-        else:
-            raise AttributeError(f"{self.__class__.__name__} has no attribute {name}")
-
-    def eat(self):
-        pass
-
-    def sleep(self):
-        pass
+    __slots__ = ('eat', 'sleep')
 
 
 class HiddenAttrs:
@@ -64,5 +52,5 @@ class CallableInstances:
     def __init__(self, func):
         self.func = func
 
-    def __call__(self, a):
-        return self.func(a)
+    def __call__(self, x):
+        return func(x)
