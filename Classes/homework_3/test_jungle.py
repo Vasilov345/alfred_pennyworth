@@ -127,6 +127,3 @@ class TestJungle(unittest.TestCase):
             self.assertEqual(animals, animals_from_jungle)
         except TypeError:
             self.assertTrue(False, "Jungle is not iterable")
-
-    if __name__ == "__main__":
-        unittest.main()
