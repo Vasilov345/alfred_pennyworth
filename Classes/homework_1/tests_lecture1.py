@@ -23,6 +23,7 @@ class MagicMethodsTestCases(unittest.TestCase):
     def test_hidden_attrs(self):
         hidden_attrs_obj = homework_lecture1.HiddenAttrs()
         self.assertEqual(dir(hidden_attrs_obj), [])
+
         self.assertEqual(hidden_attrs_obj.__dict__(), {})
         hidden_attrs_obj.new_attr = 5
         self.assertEqual(hidden_attrs_obj.__dict__(), {})
