@@ -1,37 +1,16 @@
 import dataclasses
-from typing import Any, Type, Tuple
 
 """
     Make class with one method "add_num" with 2 parameters, which returns sum of these parameters.
     Note: this method should not take instance as first parameter.
     """
+
+
 @staticmethod
 class Math():
 
-    def add_num(self):
+    def add_num(self, a, b):
         return a + b
-
-
-class Pizza:
-    def __init__(self):
-        self.ingredients = ["tomato", "cucumber"]
-        print("List of ingredients: ")
-
-    class pizza1:
-        def __init__(self):
-            self.ingredients = ['mozzarella', 'tomatoes']
-            super(Pizza, self).__init__()
-            print("margherita")
-
-    class pizza2:
-        def __init__(self):
-            self.ingredients = ['mozzarella', 'tomatoes', 'ham']
-            super(Pizza, self).__init__()
-            print("prosciutto")
-
-pizza1 = Pizza()
-pizza1.margherita()
-pizza2.prosciutto()
 
 
     """
@@ -45,37 +24,35 @@ pizza2.prosciutto()
         pizza1.ingredients will equal to ["tomato", "cucumber"]
         pizza2 = Pizza.prosciutto()
         pizza2.ingredients will equal to ['mozzarella', 'tomatoes', 'ham']
-            """
+            
+                """
 
-    #obj = SlotsClass()
-    ##obj.pizza1 = pizza1["tomato", "cucumber"]
-    #obj.pizza2 = pizza2["tomato", "cucumber"]
-    #obj.pizza2 = Pizza.prosciutto()
-    #obj.pizza2.ingredients = ['mozzarella', 'tomatoes', 'ham']
-    #obj.__slots__
+#RegularClass
+class Pizza:
+    def __dir__(self):
+        Pizza = "tomato", "cucumber"
+        return[]
 
-    #def __init__(self, pizza1, pizza2):
-     #  self.pizza1 = pizza1["tomato", "cucumber"]
-      #  self.pizza2 = pizza2["tomato", "cucumber"]
-       # self.pizza2 = Pizza.prosciutto()
-        #self.pizza2.ingredients = ['mozzarella', 'tomatoes', 'ham']
-
-   # __slots__: 'pizza1', 'pizza2'
-
-    #def __repr__():
-    #    return f'{repr(self).__init__}({repr(self.pizza1)}, {repr(self.pizza2)})'
+obj = Pizza()
+obj.__dict__
+    # {}
+obj.margherita = 'mozzarella', 'tomatoes'
+obj.__dict__
+    # {'foo': 5}
+obj.prosciutto = 'mozzarella', 'tomatoes', 'ham'
+obj.__dict__
 
 
-# """
-# Make class, which has max_visitors_num attribute and its instances will have visitors_count attribute.
-# In case of setting visitors_count - max_visitors_num should be checked,
-# if visitors_count value is bigger than max_visitors_num - visitors_count should be assigned with max_visitors_num.
-# Example:
-#     Concert.max_visitor_num = 50
-#     concert = Concert()
-#     concert.visitors_count = 1000
-#     print(concert.visitors_count)  # 50
-# """
+""" 
+                    Make class, which has max_visitors_num attribute and its instances will have visitors_count attribute.\n"
+                    In case of setting visitors_count - max_visitors_num should be checked,
+                    if visitors_count value is bigger than max_visitors_num - visitors_count should be assigned with max_visitors_num.\n"
+                    Example:
+                    Concert.max_visitor_num = 50
+                    concert = Concert()
+                    concert.visitors_count = 1000
+                    print(concert.visitors_count)  # 50
+                    """
 
 class Concert:
     def __init__(self):
@@ -107,9 +84,8 @@ class BookDataclass:
     author: str
     pages_num: int = 0
 
-
-book = Book(title="str", author="str", pages_num="int = 0")
-print(book[1])
+BookDataclas = BookDataclass(title="str", author="str", pages_num="int = 0")
+print(BookDataclas[1])
 
 
 @BookDataclass
