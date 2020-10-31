@@ -1,11 +1,42 @@
-class namedtuple():
-    """
-       Make class with one method "add_num" with 2 parameters, which returns sum of these parameters.
-       Note: this method should not take instance as first parameter.
-       """
-    def add_num = collections.namedtuple(['a', 'b'])
-    return a + b
+import dataclasses
+import types
+import unittest
+import homework_lecture_2
 
+from _pytest.config import get_plugin_manager
+import collections
+import pytest
+from _pytest.config import get_plugin_manager
+
+from pkg_resources import iter_entry_points
+
+from _jb_runner_tools import jb_patch_separator, jb_doc_args, JB_DISABLE_BUFFERING, start_protocol, parse_arguments, \
+    set_parallel_mode
+from teamcity import pytest_plugin
+
+"""
+    Make class with one method "add_num" with 2 parameters, which returns sum of these parameters.
+    Note: this method should not take instance as first parameter.
+    """
+class _num():
+
+    def __init__(self):
+            self._num = a + b
+
+        # @property decorator can be used to create getters & setters in pythonic way.
+
+    @property
+    def _add_num(self):
+        return self._add_num
+
+    @add_num.setter
+    def add_num(self, value):
+        _add = _num()
+        _add.add_num = a + b
+        self._add_num = value
+
+
+print(_add.add_num)
 
 
 from abc import ABC
@@ -25,7 +56,7 @@ class AbstractBase ('pizza1', 'pizza2'):
         pizza2.ingredients will equal to ['mozzarella', 'tomatoes', 'ham']
     """
 
-    def __init__(self, 'pizza1', 'pizza2'):
+    def __init__(self, pizza1, pizza2) -> Any:
         self.pizza1 = pizza1 ["tomato", "cucumber"]
         self.pizza2 = pizza2 ["tomato", "cucumber"]
         self.pizza2 = Pizza.prosciutto()
@@ -99,8 +130,6 @@ class RegularBook:
         self.author = author
         self.pages_num = pages_num
 
-print(book)
-
-
+print(RegularBook)
 
     # HW#5 homework_lecture_2.py
