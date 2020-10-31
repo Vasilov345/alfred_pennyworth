@@ -1,37 +1,42 @@
 import dataclasses
-from typing import Any
+from typing import Any, Type, Tuple
 
 """
     Make class with one method "add_num" with 2 parameters, which returns sum of these parameters.
     Note: this method should not take instance as first parameter.
     """
-class _num():
+@staticmethod
+class Math():
 
+    def add_num(self):
+        return a + b
+
+
+class Pizza:
     def __init__(self):
-            self._num = a + b
+        self.ingredients = ["tomato", "cucumber"]
+        print("List of ingredients: ")
 
-        # @property decorator can be used to create getters & setters in pythonic way.
+    class pizza1:
+        def __init__(self):
+            self.ingredients = ['mozzarella', 'tomatoes']
+            super(Pizza, self).__init__()
+            print("margherita")
 
-    @property
-    def _add_num(self):
-        return self._add_num
+    class pizza2:
+        def __init__(self):
+            self.ingredients = ['mozzarella', 'tomatoes', 'ham']
+            super(Pizza, self).__init__()
+            print("prosciutto")
 
-    @add_num.setter
-    def add_num(self, value):
-        _add = _num()
-        _add.add_num = a + b
-        self._add_num(self): -> Any
+pizza1 = Pizza()
+pizza1.margherita()
+pizza2.prosciutto()
 
-print(_add.add_num)
-
-
-from abc import ABC
-
-class AbstractBase ('pizza1', 'pizza2'):
-    __slots__ = 'pizza1', 'pizza2'
 
     """
-    Make class which takes 1 parameter on init - list of ingredients and defines instance attribute ingredients.
+        
+        Make class which takes 1 parameter on init - list of ingredients and defines instance attribute ingredients.
     It should have 2 methods:
     margherita (['mozzarella', 'tomatoes']) and prosciutto (['mozzarella', 'tomatoes', 'ham'])
     which should create Pizza instances with predefined list of ingredients.
@@ -40,21 +45,25 @@ class AbstractBase ('pizza1', 'pizza2'):
         pizza1.ingredients will equal to ["tomato", "cucumber"]
         pizza2 = Pizza.prosciutto()
         pizza2.ingredients will equal to ['mozzarella', 'tomatoes', 'ham']
-    """
+            """
 
-    def __init__(self, pizza1, pizza2) -> Any:
-        self.pizza1 = pizza1 ["tomato", "cucumber"]
-        self.pizza2 = pizza2 ["tomato", "cucumber"]
-        self.pizza2 = Pizza.prosciutto()
-        self.pizza2.ingredients = ['mozzarella', 'tomatoes', 'ham']
+    #obj = SlotsClass()
+    ##obj.pizza1 = pizza1["tomato", "cucumber"]
+    #obj.pizza2 = pizza2["tomato", "cucumber"]
+    #obj.pizza2 = Pizza.prosciutto()
+    #obj.pizza2.ingredients = ['mozzarella', 'tomatoes', 'ham']
+    #obj.__slots__
 
-#pizza1 = Pizza (["tomato", "cucumber"])
-#pizza1.ingredients = ["tomato", "cucumber"]
-#pizza2 = Pizza.prosciutto()
-#pizza2.ingredients = ['mozzarella', 'tomatoes', 'ham']
+    #def __init__(self, pizza1, pizza2):
+     #  self.pizza1 = pizza1["tomato", "cucumber"]
+      #  self.pizza2 = pizza2["tomato", "cucumber"]
+       # self.pizza2 = Pizza.prosciutto()
+        #self.pizza2.ingredients = ['mozzarella', 'tomatoes', 'ham']
 
-def __repr__(type):
-    return f'{type(self).__init__}({repr(self.pizza1)}, {repr(self.pizza2)})'
+   # __slots__: 'pizza1', 'pizza2'
+
+    #def __repr__():
+    #    return f'{repr(self).__init__}({repr(self.pizza1)}, {repr(self.pizza2)})'
 
 
 # """
@@ -70,7 +79,7 @@ def __repr__(type):
 
 class Concert:
     def __init__(self):
-        self.Concert.max_visitor_num = 50
+        self.concert.max_visitor_num = 50
 
         # @property decorator can be used to create getters & setters in pythonic way.
 
@@ -78,13 +87,14 @@ class Concert:
     def concert(self):
         return self.concert.visitors_count
 
+
 concert = Concert()
 concert.visitors_count = 1000
 
 print(concert.visitors_count)
 
-
 from dataclasses import dataclass
+
 
 @dataclasses.dataclass(frozen=True)
 class BookDataclass:
@@ -97,7 +107,8 @@ class BookDataclass:
     author: str
     pages_num: int = 0
 
-book = Book(title="str", author="str", pages_num ="int = 0")
+
+book = Book(title="str", author="str", pages_num="int = 0")
 print(book[1])
 
 
@@ -116,7 +127,7 @@ class RegularBook:
         self.author = author
         self.pages_num = pages_num
 
+
 print(RegularBook)
 
-
-    # HW#5 homework_lecture_2.py
+# HW#5 homework_lecture_2.py
