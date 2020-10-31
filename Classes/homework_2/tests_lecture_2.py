@@ -1,7 +1,11 @@
+import sys
 import dataclasses
 import types
 import unittest
 import homework_lecture_2
+import pytest
+from _pytest.config import get_plugin_manager
+import collections
 
 
 class TestCases(unittest.TestCase):

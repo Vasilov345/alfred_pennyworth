@@ -1,15 +1,18 @@
-class Maths:
+class namedtuple():
     """
-    Make class with one method "add_num" with 2 parameters, which returns sum of these parameters.
-    Note: this method should not take instance as first parameter.
-    """
-
-    @staticmethod
-    def add_num(x, y):
-        return x + y
+       Make class with one method "add_num" with 2 parameters, which returns sum of these parameters.
+       Note: this method should not take instance as first parameter.
+       """
+    def add_num = collections.namedtuple(['a', 'b'])
+    return a + b
 
 
-class Pizza:
+
+from abc import ABC
+
+class AbstractBase ('pizza1', 'pizza2'):
+    __slots__ = 'pizza1', 'pizza2'
+
     """
     Make class which takes 1 parameter on init - list of ingredients and defines instance attribute ingredients.
     It should have 2 methods:
@@ -22,16 +25,19 @@ class Pizza:
         pizza2.ingredients will equal to ['mozzarella', 'tomatoes', 'ham']
     """
 
-    def __init__(self, ingridients):
-        self.ingredients = ingridients
+    def __init__(self, 'pizza1', 'pizza2'):
+        self.pizza1 = pizza1 ["tomato", "cucumber"]
+        self.pizza2 = pizza2 ["tomato", "cucumber"]
+        self.pizza2 = Pizza.prosciutto()
+        self.pizza2.ingredients = ['mozzarella', 'tomatoes', 'ham']
 
-    @classmethod
-    def margherita(cls):
-        return cls([ 'mozzarella', 'tomatoes' ])
+#pizza1 = Pizza (["tomato", "cucumber"])
+#pizza1.ingredients = ["tomato", "cucumber"]
+#pizza2 = Pizza.prosciutto()
+#pizza2.ingredients = ['mozzarella', 'tomatoes', 'ham']
 
-    @classmethod
-    def prosciutto(cls):
-        return cls([ 'mozzarella', 'tomatoes', 'ham' ])
+def __repr__(type):
+    return f'{type(self).__init__}({repr(self.pizza1)}, {repr(self.pizza2)})'
 
 
 # """
@@ -44,49 +50,57 @@ class Pizza:
 #     concert.visitors_count = 1000
 #     print(concert.visitors_count)  # 50
 # """
-class Concert:
-    max_visitors_num = 0
 
+class Concert:
     def __init__(self):
-        self._visitors_count = 0
+        self.Concert.max_visitor_num = 50
+
+        # @property decorator can be used to create getters & setters in pythonic way.
 
     @property
-    def visitors_count(self):
-        return self._visitors_count
+    def concert(self):
+        return self.concert.visitors_count
 
-    @visitors_count.setter
-    def visitors_count(self, value):
-        if value > Concert.max_visitors_num:
-            self._visitors_count = Concert.max_visitors_num
-        else:
-            self._visitors_count = value
+concert = Concert()
+concert.visitors_count = 1000
+
+print(concert.visitors_count)
 
 
 from dataclasses import dataclass
 
-
-@dataclass
+@dataclasses.dataclass(frozen=True)
 class BookDataclass:
     """
             Create dataclass with 3 fields - title (str), author (str), pages_num (int)
             """
-
+    # Attributes Declaration
+    # using Type Hints - Class with attributes
     title: str
     author: str
     pages_num: int = 0
 
+book = Book(title="str", author="str", pages_num ="int = 0")
+print(book[1])
 
-class Book:
+
+@BookDataclass
+class RegularBook:
     """
            Create regular class taking 3 params on init - title, author, pages_num
            Make its str() representation the same as for BookDataclass defined above.
            """
+    title: str
+    author: str
+    pages_num: int = 0
 
     def __init__(self, title, author, pages_num):
         self.title = title
         self.author = author
         self.pages_num = pages_num
 
-    def __str__(self):
-        return str(BookDataclass(title=self.title, author=self.author, pages_num=self.pages_num))
+print(book)
+
+
+
     # HW#5 homework_lecture_2.py
