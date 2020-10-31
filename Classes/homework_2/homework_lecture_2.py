@@ -1,18 +1,4 @@
 import dataclasses
-import types
-import unittest
-import homework_lecture_2
-
-from _pytest.config import get_plugin_manager
-import collections
-import pytest
-from _pytest.config import get_plugin_manager
-
-from pkg_resources import iter_entry_points
-
-from _jb_runner_tools import jb_patch_separator, jb_doc_args, JB_DISABLE_BUFFERING, start_protocol, parse_arguments, \
-    set_parallel_mode
-from teamcity import pytest_plugin
 
 """
     Make class with one method "add_num" with 2 parameters, which returns sum of these parameters.
