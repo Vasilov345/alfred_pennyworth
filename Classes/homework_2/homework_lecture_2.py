@@ -1,4 +1,5 @@
 import dataclasses
+from typing import Any
 
 """
     Make class with one method "add_num" with 2 parameters, which returns sum of these parameters.
@@ -19,8 +20,7 @@ class _num():
     def add_num(self, value):
         _add = _num()
         _add.add_num = a + b
-        self._add_num = value
-
+        self._add_num(self): -> Any
 
 print(_add.add_num)
 
@@ -117,5 +117,6 @@ class RegularBook:
         self.pages_num = pages_num
 
 print(RegularBook)
+
 
     # HW#5 homework_lecture_2.py
