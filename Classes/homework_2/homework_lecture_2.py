@@ -33,14 +33,15 @@ class Pizza:
         Pizza = "tomato", "cucumber"
         return[]
 
-obj = Pizza()
-obj.__dict__
-    # {}
-obj.margherita = 'mozzarella', 'tomatoes'
-obj.__dict__
-    # {'foo': 5}
-obj.prosciutto = 'mozzarella', 'tomatoes', 'ham'
-obj.__dict__
+        obj = Pizza()
+        obj.__dict__
+        # {}
+        obj.margherita = 'mozzarella', 'tomatoes'
+        obj.__dict__
+        # {'foo': 5}
+        obj.prosciutto = 'mozzarella', 'tomatoes', 'ham'
+        obj.__dict__
+
 
 
 """ 
