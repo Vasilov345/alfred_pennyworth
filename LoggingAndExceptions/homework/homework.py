@@ -1,6 +1,9 @@
 import logging
 
 
+logging.basicConfig(filename="test.log", filemode="w", level=logging.INFO,  format= "")
+
+
 class Error(Exception):
     pass
 
@@ -45,10 +48,6 @@ def make_concert(visitors_num):
         return True
 
 
-# create Logger object
-# set level to debug
-# add handler to write logs to file "test.log"
-
 
 def log_message(message, level):
     """
@@ -57,11 +56,11 @@ def log_message(message, level):
     :param message:
     :param level:
     """
-    logging.basicConfig(filename="test.log", filemode="w")
-    if level > 30:
-        logging.info(message)
-        else
-        logging.info([])
 
-if __name__ == "__main__":
-    a =Concert(30)
+    if level == 30:
+        logging.warning(message)
+
+    elif level == 20:
+        logging.info(message)
+
+
