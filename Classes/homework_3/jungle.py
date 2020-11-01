@@ -1,43 +1,122 @@
-from future import annotations
+from __future__ import annotations
+import abc
+import uuid4
+import random
 
-from typing import Dict, Any
-
-from abc import ABC, abstractmethod
-
-from random import randint
-
-from uuid import uuid4
+from typing import Dict
 
 
-class Animal(ABC):
+class Animal(abc.ABC):
 
     def __init__(self, power: int, speed: int):
         self.id = str(uuid4())
-        self.max_power = randint(20, 100)
-        self.current_power = self.max_power
-        self.speed = randint(20, 100)
+        self.max_power = power
+        self.current_power = power
+        self.speed = speed
 
-    @abstractmethod()
+    def restore_power(self):
+        self.current_power = len(self.max_power, self.current_power + int(self.max_power * 0,4))
+
+    def loss_power(self):
+        print("current power", self.current_power)
+        self.current_power = self.current_power - int(self.max_power * 0,3)
+        if self.current_power < 0
+            print("current < 0")
+
+    @abc.abstractmethod
     def eat(self, jungle: Jungle):
         pass
+
+    def if_animal_can_search_food(self):
+        return self.current_power > 0
+
+    def catch(self, prey: Animal):
+        return prey.current_power < self.speed
+
+    def kill(self, prey: Animal):
+        return prey.current_power < self.current_power
 
 
 class Predator(Animal):
-
-    def __init__(self, power: int, speed: int):
-        self.max_power = power
-        self.current_power = power
-        self.speed = speed
-
     def eat(self, jungle: Jungle):
-        pass
+        if not self.if_animal_can_search_food():
+            jungle.remove_animal(self)
+            return
 
+        prey = jungle.get_random_animal()
+        print(f"predator eating, {prey.id}")
+        if prey.id == self.id:
+            self.loss_power()
+            return
+        is_killed = False
+        is_caught = False
+        if self.catch(prey):
+            is_caught = True
+            if self.kill(prey):
+                jungle.remove_animal(prey)
+                is_killed = True
+        if not  is_caught or not is_killed:
+            self.loss_power()
+            prey.loss_power()
+# to be checked
 
 class Herbivorous(Animal):
 
-    def __init__(self, power: int, speed: int):
-        self.max_power = power
-        self.current_power = power
-        self.speed = speed
+    def eat(self, jungle: Jungle):
+        print(f"herbivorous eating")
+        if self.if_animal_can_search_food():
+            self.restore_power()
+        else:
+            jungle.remove_animal(self)
 
-    def eat(self, jungle: Jungle)
+
+class Jungle:
+
+    def __init__(self):
+        self.animals: Dict[str, Animal] = dict()
+        self.number = -1
+
+    def __getitem__(self, item):
+        length = len(self.animals)
+        if self.number >= length - 1:
+            self.number = -1
+            raise StopIteration
+        self.number += 1
+        return list(self.animals.values())[self.number]
+
+    def get_random_animal(self):
+        return random.choice(list(self.animals.values()))
+
+    def any_predator_left(self):
+        if any(isinstance(animal, Predator) for animal in jungle.animals.values()):
+            return True
+        return False
+
+    def add_animal(self, animal: Animal):
+        self.animals[animal.id] = animal
+
+    def remove_animal(self, animal: Animal):
+        self.animals.pop(animal.id)
+
+def animal_generator():
+    while True:
+        if random.randint(1, 2) == 1:
+            yield Herbivorous(power=random.randint(20, 100), speed=random.randint(20, 100))
+        else:
+            yield Predator(power=random.randint(20, 100), speed=random.randint(20, 100))
+
+if __name__== "__main__":
+    gen = animal_generator()
+    jungle = Jungle()
+    for i in range(5):
+        jungle.add_animal(next(gen))
+
+    while True:
+        if any(isinstance(animal, Predator) for animal in jungle.animals.values()):
+            try:
+                for animal in jungle.animals.values():
+                    animal.eat(jungle=jungle)
+            except RuntimeError:
+                continue
+        else:
+            break
