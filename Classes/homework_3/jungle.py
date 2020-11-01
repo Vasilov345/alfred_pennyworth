@@ -105,7 +105,6 @@ class Jungle:
     def remove_animal(self, animal: Animal):
         self.animals.pop(animal.id)
 
-
     def get_rand_animal(self):
         return choice(list(jungle.animals.values()))
 
@@ -133,11 +132,11 @@ if __name__ == "__main__":
     for i in range(10):
         animal = next(nature)
         jungle.add_animal(animal)
-
+    creator_CSV(jungle)
     while True:
         if not jungle.any_predator_left():
             print(f"list of Herbivorous left {jungle.animals}")
             break
         for animal in jungle:
             animal.eat(jungle=jungle)
-    creator_CSV(jungle)
+
