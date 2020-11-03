@@ -1,0 +1,32 @@
+************************
+What problem solve
+************************
+As applications become more complex, having good logs can be very useful,
+not only when debugging but also to provide insight for application issues/performance.
+
+It can help you develop a better understanding of the flow of a program and discover scenarios that you might not even have thought of while developing.
+
+They can store information, like which user or IP accessed the application.
+If an error occurs, then they can provide more insights than a stack trace by telling you what the state of
+the program was before it arrived at the line of code where the error occurred.
+
+By logging useful data from the right places, you can not only debug errors easily but also use the data to analyze
+the performance of the application to plan for scaling or look at usage patterns to plan for marketing.
+
+Logging serves two purposes:
+Diagnostic logging records events related to the application’s operation. If a user calls in to report an error, for example, the logs can be searched for context.
+Audit logging records events for business analysis. A user’s transactions can be extracted and combined with other user details for reports or to optimize a business goal.
+
+**************************
+Advices about good message
+**************************
+- write easily parsible log messages
+- include information full enough so that it is easy to find problematic place
+
+**************************
+Warnings about bad message
+**************************
+- don't log sensitive data
+- avoid multiline log messages
+
+
