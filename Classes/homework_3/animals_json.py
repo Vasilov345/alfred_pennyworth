@@ -1,0 +1,37 @@
+import json
+
+tiger = {
+  "Animal": "Predator",
+  "Power": "100",
+  "Speed": "70"
+}
+
+json_dumps = json.dumps(tiger)
+print(f"Json dumps type: {type(json_dumps)} value: {json_dumps}")
+
+horse = {
+  "Animal": "Herbivorous",
+  "Power": "100",
+  "Speed": "100"
+}
+
+json_dumps = json.dumps(horse)
+print(f"Json dumps type: {type(json_dumps)} value: {json_dumps}")
+
+dog = {
+  "Animal": "Predator",
+  "Power": "10",
+  "Speed": "70"
+}
+
+json_dumps = json.dumps(dog)
+print(f"Json dumps type: {type(json_dumps)} value: {json_dumps}")
+
+elephant = {
+  "Animal": "Herbivorous",
+  "Power": "100",
+  "Speed": "40"
+}
+
+json_dumps = json.dumps(elephant)
+print(f"Json dumps type: {type(json_dumps)} value: {json_dumps}")

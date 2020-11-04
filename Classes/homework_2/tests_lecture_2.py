@@ -1,5 +1,8 @@
-import homework_lecture_2
+import dataclasses
+import types
 import unittest
+from Classes.homework_2 import homework_lecture_2
+
 
 class TestCases(unittest.TestCase):
 

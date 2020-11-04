@@ -1,5 +1,9 @@
 import unittest
 import homework
+<<<<<<< HEAD
+=======
+from LoggingAndExceptions.homework import homework
+>>>>>>> bcdbe039ca591bcd6801c62ac89c9a83db0710f2
 
 
 class TestCases(unittest.TestCase):
@@ -20,4 +24,8 @@ class TestCases(unittest.TestCase):
 
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     unittest.main()
+=======
+    unittest.main()
+>>>>>>> bcdbe039ca591bcd6801c62ac89c9a83db0710f2
