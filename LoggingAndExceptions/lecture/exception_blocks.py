@@ -100,3 +100,4 @@ try:
     check_value(10)
 except Exception as e:
     print(e)
+

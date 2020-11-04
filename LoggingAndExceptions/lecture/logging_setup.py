@@ -5,7 +5,6 @@
 # and loading it using fileConfig() or dictConfig() respectively.
 # These are useful in case you want to change your logging configuration in a running application.
 import logging.config
-
 logging.config.fileConfig(fname='logger.conf', disable_existing_loggers=False)
 
 # Get the logger specified in the file
@@ -58,6 +57,7 @@ logger_config = {
         'handlers': ['console', 'file', 'errors']
     },
 }
+
 
 logging.config.dictConfig(logger_config)
 logger = logging.getLogger("Logger from dictionary config")

@@ -26,6 +26,7 @@ def do_something():
 module1()
 do_something()
 
+
 # ************************
 # LogRecord object
 # ************************
@@ -33,15 +34,16 @@ do_something()
 # and can be created manually via makeLogRecord() (for example, from a pickled event received over the wire).
 # https://docs.python.org/3.8/library/logging.html#logrecord-objects
 record = logging.makeLogRecord(
-    dict(
-        msg="This is logging record1.",
-        mylevel="INFO",
-        ispbar=False,
-    ))
+        dict(
+            msg="This is logging record1.",
+            mylevel="INFO",
+            ispbar=False,
+        ))
 
 print("Log record info:")
 print(record.created)
 print(record.getMessage())
+
 
 # ************************
 # Handler object
