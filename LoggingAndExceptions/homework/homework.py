@@ -14,41 +14,19 @@ class TooFewVisitors(Error):
 
 
 class Concert:
+    # add 2 class attributes - max_visitors (200) and min_visitors (10)
     max_visitors = 200
     min_visitors = 10
 
     def __init__(self, visitors_num):
-        self.visitors_num = visitors_num
-
-
-if self.visitors_num > self.max_visitors:
-    raise TooManyVisitors
-elif self.visitors_num < self.min_visitors:
-    raise TooFewVisitors
-
-
-    # add 2 class attributes - max_visitors (200) and min_visitors (10)
-
-    def __init__(self, visitors_num, message="Count of visitors is not in (10 - 200 range."):
-        self.visitors_num = visitors_num
-        self.message = message
-        super(Concert, self).__init__(self.message)
-
-
-    def __str__(self):
-        return f"(self.visitors_num) -> (self.message)"
-
-visitors_num = int(input("Max visitors - 200"))
-if 0 < visitors_num < 10
-    raise TooFewVisitorsError(visitors_num)
-
-if 200 > visitors_num
-    raise TooManyVisitorsError(visitors_num)
-
-    """
-    if visitors num is bigger than max_visitors - raise TooManyVisitors error
-    if visitors num is less than min_visitors - raise TooFewVisitors error
-    """
+        """
+        if visitors num is bigger than max_visitors - raise TooManyVisitors error
+        if visitors num is less than min_visitors - raise TooFewVisitors error
+        """
+        if visitors_num > self.max_visitors:
+            raise TooManyVisitors
+        elif visitors_num < self.min_visitors:
+            raise TooFewVisitors
 
 
 def make_concert(visitors_num):
@@ -56,11 +34,22 @@ def make_concert(visitors_num):
     create Concert instance - handle TooManyVisitors and TooFewVisitors errors here:
     in case if caught - log error to console and return False, in case of successful initialization - return True
     """
+    try:
+        a = Concert(9)
+    except TooManyVisitors as e:
+        print(e)
+        return False
+    except TooFewVisitors as e:
+        print(e)
+        return False
+    else:
+        return True
 
 
-# create Logger object
-# set level to debug
-# add handler to write logs to file "test.log"
+logger_obj = logging.getLogger('test')
+logger_obj.setLevel(logging.DEBUG)
+handler = logging.handlers.RotatingFileHandler("test.log", mode='w')
+logger_obj.addHandler(handler)
 
 
 def log_message(message, level):
@@ -70,3 +59,13 @@ def log_message(message, level):
     :param message:
     :param level:
     """
+    if level == 10:
+        logger_obj.debug(message)
+    elif level == 20:
+        logger_obj.info(message)
+    elif level == 30:
+        logger_obj.warning(message)
+    elif level == 40:
+        logger_obj.error(message)
+    elif level == 50:
+        logger_obj.critical(message)
