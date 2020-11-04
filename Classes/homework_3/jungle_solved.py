@@ -78,8 +78,8 @@ def animal_generator():
 
 
 if __name__ == "__main__":
-    # jungle = Jungle()
-    # nature = animal_generator()
+     jungle = Jungle()
+     nature = animal_generator()
     #
     # while True:
     #     try:
