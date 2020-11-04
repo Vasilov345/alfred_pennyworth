@@ -12,7 +12,7 @@ class TooManyVisitors(Error):
 class TooFewVisitors(Error):
     pass
 
-
+# create Logger object
 class Concert:
     # add 2 class attributes - max_visitors (200) and min_visitors (10)
     max_visitors = 200
@@ -46,17 +46,13 @@ def make_concert(visitors_num):
         return True
 
 
+# add handler to write logs to file "test.log"
 logger_obj = logging.getLogger('test')
 logger_obj.setLevel(logging.DEBUG)
 handler = logging.handlers.RotatingFileHandler("test.log", mode='w')
 logger_obj.addHandler(handler)
 
-
-# create Logger object
 # set level to debug
-# add handler to write logs to file "test.log"
-
-
 def log_message(message, level):
     """
     this function should use the logger defined above and log messages.
