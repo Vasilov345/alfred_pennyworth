@@ -19,5 +19,6 @@ class Programmer:
 
 if __name__ == "__main__":
     # Coffee Programmer with classic __enter__ __exit__  methods
-    with Programmer() as denys:
-        denys.work(hours=10)
+    with Programmer() as denys: #printing __enter__
+        denys.work(hours=10) # printing logic
+        #printing __exit__

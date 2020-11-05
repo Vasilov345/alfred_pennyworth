@@ -1,4 +1,6 @@
 from __future__ import annotations
+
+import csv
 from abc import ABC, abstractmethod
 from random import randint, choice
 from typing import Dict, Any, List
@@ -14,8 +16,8 @@ class Animal(ABC):
         self.current_power = power
         self.speed = speed
 
-    def __repr__(self):
-        return (f"Animal {self.id}, power={self.current_power}, speed={self.speed}")
+    def __str__(self):
+        return f"Animal {self.id},{self.__class__} power={self.current_power}, speed={self.speed}"
 
     def loss_power(self):
         # print("current power", self.current_power)
@@ -96,8 +98,11 @@ class Jungle:
 
     def add_animal(self, animal: Animal):
         self.animals[animal.id] = animal
-        with open("animals_from_jungle.json", "a") as file:
-            json.dump(str(animal), file)
+        # with open("animals_from_jungle.json", "a") as file:
+        #     json.dump(str(animal), file)
+        with open('animals_from_jungle.csv', 'a', newline='') as file:
+            writer = csv.writer(file, delimiter=" ")
+            writer.writerow(str(animal))
 
     def remove_animal(self, animal: Animal):
         self.animals.pop(animal.id)
