@@ -1,4 +1,5 @@
 import json
+from typing import List
 
 programmer = {"name": "denys", "stack": ["Python", "TDD"], "age": 27}
 
@@ -12,7 +13,7 @@ print(f"Json loads type: {type(new_programmer)} value : {new_programmer}")
 
 # dump
 with open("json_example.json", "w") as file:
-    json.dump(programmer, file)
+    json.dump(programmer, file, indent=4)
 
 # load
 with open("json_example.json", "r") as file:
