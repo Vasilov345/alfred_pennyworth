@@ -22,7 +22,7 @@ def add(a, b):
 add(5, 5)  # 20
 
 
-# 2. only_even_parameters
+#2. only_even_parameters
 # This decorator function should only allow a function to have even parameters,
 # otherwise return the string "Please only use even numbers!"
 
