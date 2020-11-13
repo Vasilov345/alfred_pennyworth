@@ -1,4 +1,5 @@
 from typing import List, Dict
+import random
 
 Alphabet = List[Dict[str, int]]
 
@@ -19,7 +20,15 @@ def generate_alphabet() -> Alphabet:
         {'t': 57}, {'u': 34}, {'v': 70}, {'w': 13}, {'x': 86}, {'y': 12}, {'z': 82}
     ]
     """
-    pass
+    dct = {}
+
+    res = []
+
+    for i in range(ord('a'), ord('z') + 1):
+        dct[chr(i)] = random.randint(0, 100)
+        res.append(dct)
+        dct = {}
+    return res
 
 
 def sort_alphabet(data: Alphabet) -> Alphabet:
@@ -29,4 +38,13 @@ def sort_alphabet(data: Alphabet) -> Alphabet:
         sort_alphabet([{'a': 5}, {'b': 57}, {'c': 23}])
         >>> [{'a': 5}, {'c': 23}, {'b': 57}]
     """
-    pass
+    res = []
+    k = 0
+    while k <= 100:
+        k += 1
+        for i in data:
+            for v in i.values():
+                if v == k:
+                    res.append(i)
+    return res
+
