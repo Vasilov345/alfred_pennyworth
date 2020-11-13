@@ -26,11 +26,11 @@ class Encoder(json.JSONEncoder):
         if isinstance(obj, ObjectWithSimpleAttributes):
             return obj.__dict__
 
-        if isinstance(obj, Person):
-            return obj.__dict__
+        # if isinstance(obj, Person):
+        #     return obj.__dict__
 
-        if isinstance(obj, datetime.datetime):
-            return obj.isoformat()
+        # if isinstance(obj, datetime.datetime):
+        #     return obj.isoformat()
 
         return json.JSONEncoder.default(self, obj)
 
