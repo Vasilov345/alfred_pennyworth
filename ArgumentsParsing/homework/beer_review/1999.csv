@@ -1,0 +1,87 @@
+brewery_name,review_time,review_overall,review_aroma,review_profilename,beer_style,review_taste,beer_name,beer_beerid
+Cambridge Brewing Company,9.26294401E8,4.0,3.5,BeerAdvocate,Bière de Garde,3.5,Biere De Garde,509.0
+Cambridge Brewing Company,9.40723201E8,4.5,4.0,BeerAdvocate,Scotch Ale / Wee Heavy,4.5,Bannatyne's Scotch Ale,454.0
+Cambridge Brewing Company,9.26294401E8,4.0,4.0,BeerAdvocate,American IPA,4.5,Thetford IPA,516.0
+Cambridge Brewing Company,9.26294401E8,3.5,4.0,BeerAdvocate,American Stout,4.0,Beantowne Espresso Stout,511.0
+Cambridge Brewing Company,9.26294401E8,4.0,3.5,BeerAdvocate,Extra Special / Strong Bitter (ESB),4.0,Bitchin' Special Bitter,508.0
+Cambridge Brewing Company,9.26294401E8,4.5,4.0,BeerAdvocate,American Barleywine,4.5,Blunderbuss Barley Wine,510.0
+"Underground, The",9.29923201E8,4.0,4.0,BeerAdvocate,American Pale Ale (APA),4.0,Hippie Jim's Yellow Sunshine Pale Ale,2382.0
+Sierra Nevada Brewing Co.,9.18518401E8,4.0,3.5,Todd,American Porter,4.0,Sierra Nevada Porter,279.0
+Celis Brewery Inc.,9.19641601E8,4.5,4.0,Jason,Witbier,4.0,Celis Grand Cru,168.0
+Celis Brewery Inc.,9.21715201E8,4.0,4.0,Jason,Bock,4.0,Celis Pale Bock,166.0
+Celis Brewery Inc.,9.19728001E8,4.0,4.0,Jason,Dubbel,4.0,Celis Dubbel Ale,169.0
+Celis Brewery Inc.,9.21628801E8,4.5,4.5,Jason,Witbier,4.5,Celis White,167.0
+Genesee Brewing Co. / Dundee Brewing Co.,9.26812801E8,3.5,3.0,Jason,American Blonde Ale,3.5,12 Horse Ale,844.0
+Long Trail Brewing Co.,9.20851201E8,4.0,4.5,Jason,Altbier,4.5,Double Bag,273.0
+Pioneer Brewing Co.,9.19814401E8,4.0,4.0,Todd,American Pale Ale (APA),4.0,Hyland American Pale Ale,250.0
+Panther Brewing Company,9.25776001E8,3.0,3.0,BeerAdvocate,Light Lager,3.0,Three Stooges Curly's Light,395.0
+John Harvard's Brewery & Ale House,9.30614401E8,4.0,4.0,BeerAdvocate,Hefeweizen,4.0,Hugh Hefeweizen,480.0
+John Harvard's Brewery & Ale House,9.26380801E8,3.5,3.0,BeerAdvocate,Kölsch,3.0,Colonial Kölsch,481.0
+John Harvard's Brewery & Ale House,9.30614401E8,4.0,3.0,BeerAdvocate,Fruit / Vegetable Beer,4.0,Blueberry Wheat,479.0
+Catamount Brewing Company,9.18691201E8,4.0,3.5,BeerAdvocate,American Pale Ale (APA),4.0,Pale Ale,2379.0
+Catamount Brewing Company,9.18691201E8,4.0,3.0,BeerAdvocate,American Amber / Red Ale,4.0,Amber Ale,2380.0
+Catamount Brewing Company,9.17913601E8,4.0,3.5,BeerAdvocate,Oatmeal Stout,3.5,Oatmeal Stout,2377.0
+Catamount Brewing Company,9.18691201E8,4.0,4.0,BeerAdvocate,American Porter,3.5,Porter,2378.0
+Catamount Brewing Company,9.15494401E8,4.5,4.5,BeerAdvocate,American IPA,4.5,Christmas Ale,2381.0
+Rogue Ales,9.37440001E8,4.0,4.0,Todd,Cream Ale,4.0,Honey Cream Ale,365.0
+Avery Brewing Company,9.39081601E8,3.5,3.5,Jason,Extra Special / Strong Bitter (ESB),3.5,14'ER ESB,67.0
+Beer Works,9.33033601E8,4.5,4.0,BeerAdvocate,Rye Beer,4.0,Independence Rye,537.0
+Beer Works,9.26985601E8,3.5,3.5,BeerAdvocate,Saison / Farmhouse Ale,4.0,Printemps Saison,546.0
+Beer Works,9.26985601E8,4.0,3.0,BeerAdvocate,American Pale Ale (APA),3.5,ASB 99,542.0
+Beer Works,9.26985601E8,3.5,3.5,BeerAdvocate,Maibock / Helles Bock,3.5,Mayflower Maibock,543.0
+Beer Works,9.33033601E8,4.5,4.5,BeerAdvocate,Hefeweizen,4.5,Haymarket Hefe-Weizen,541.0
+Beer Works,9.33033601E8,4.0,4.0,BeerAdvocate,American Pale Ale (APA),4.0,Fenway Pale Ale,538.0
+Beer Works,9.33033601E8,4.5,3.5,BeerAdvocate,American Pale Ale (APA),4.5,Fenway Pale Ale,538.0
+Beer Works,9.31305601E8,3.5,3.5,BeerAdvocate,American Pale Wheat Ale,3.5,Climax Wheat,451.0
+Beer Works,9.26985601E8,4.0,4.0,BeerAdvocate,Extra Special / Strong Bitter (ESB),4.5,Bay State ESB,545.0
+Beer Works,9.26985601E8,3.5,3.0,BeerAdvocate,Cream Ale,3.5,Canal Street Cream Ale,544.0
+Beer Works,9.33033601E8,4.0,3.5,BeerAdvocate,Irish Dry Stout,4.0,Curley's Irish Stout,540.0
+Beer Works,9.33033601E8,4.0,4.0,BeerAdvocate,American Porter,4.0,Muddy River Porter,539.0
+Widmer Brothers Brewing Company,9.32169601E8,4.0,3.5,BeerAdvocate,American Pale Wheat Ale,4.0,Widmer Hefeweizen,17.0
+Spaten-Franziskaner-Bräu,9.23356801E8,4.0,3.5,BeerAdvocate,Doppelbock,4.0,Spaten Optimator,99.0
+Gritty McDuff's Brewing Company,9.25084801E8,3.5,3.0,Todd,English Bitter,3.5,Gritty McDuff's Best Bitter,231.0
+Commonwealth Fish & Beer Company,9.35971201E8,4.5,4.0,BeerAdvocate,English Pale Ale,4.5,Golden Ale,496.0
+Commonwealth Fish & Beer Company,9.33638401E8,4.5,4.0,BeerAdvocate,English Bitter,4.0,Summer Bitter,492.0
+Commonwealth Fish & Beer Company,9.44006401E8,4.0,3.5,BeerAdvocate,Altbier,4.0,Brewnet Bombshell,455.0
+Commonwealth Fish & Beer Company,9.33638401E8,4.0,3.0,BeerAdvocate,English Pale Ale,3.5,Blonde Ale,495.0
+Commonwealth Fish & Beer Company,9.17308801E8,4.5,4.0,BeerAdvocate,English Brown Ale,4.5,Brown Ale,498.0
+Commonwealth Fish & Beer Company,9.33638401E8,4.5,3.5,BeerAdvocate,American Pale Ale (APA),4.0,American Pale Ale,494.0
+Commonwealth Fish & Beer Company,9.44006401E8,4.0,4.0,BeerAdvocate,Old Ale,4.5,Special Old Ale,491.0
+Commonwealth Fish & Beer Company,9.17308801E8,4.0,3.5,BeerAdvocate,Extra Special / Strong Bitter (ESB),4.5,Boston's Best Burton Ale,499.0
+Commonwealth Fish & Beer Company,9.33638401E8,5.0,4.5,BeerAdvocate,English India Pale Ale (IPA),4.5,Commonwealth IPA,493.0
+Commonwealth Fish & Beer Company,9.17308801E8,4.0,4.0,BeerAdvocate,American Porter,4.5,Famous Porter,497.0
+Commonwealth Fish & Beer Company,9.44006401E8,4.0,3.5,BeerAdvocate,Extra Special / Strong Bitter (ESB),4.0,Winter Welcome,490.0
+Spoetzl Brewery,9.38908801E8,2.0,2.0,Todd,Bock,2.0,Shiner Bock,1352.0
+Brouwerij Slaghmuylder,9.18518401E8,3.0,3.5,Todd,Belgian Pale Ale,3.5,Witkap Pater Singel / Stimulo,14.0
+James Page Brewing Company,9.38908801E8,4.0,3.0,Todd,Vienna Lager,3.5,Iron Range Amber Lager,261.0
+Smuttynose Brewing Company,9.18086401E8,4.0,4.0,BeerAdvocate,American Porter,4.0,Smuttynose Winter Porter (Big Beer Series),180.0
+Smuttynose Brewing Company,9.18086401E8,4.5,4.0,BeerAdvocate,American Barleywine,4.5,Smuttynose Barleywine Style Ale (Big Beer Series),181.0
+Smuttynose Brewing Company,9.18086401E8,3.5,4.0,BeerAdvocate,American Barleywine,4.0,Smuttynose Barleywine Style Ale (Big Beer Series),181.0
+Miller Brewing Co.,9.38908801E8,2.5,2.5,Todd,Light Lager,2.5,Miller Lite,332.0
+Twisted Pine Brewing Company,9.42105601E8,4.0,3.5,BeerAdvocate,American Amber / Red Ale,4.0,Twisted Pine Amber Ale,35.0
+"Wild Goose Brewery, LLC",9.18518401E8,3.5,3.5,Todd,Winter Warmer,2.5,Wild Goose Snow Goose Winter Ale,15.0
+Ipswich Ale Brewery,9.40032001E8,3.5,4.0,Jason,English Barleywine,4.0,1084 Barley Wine Ale,256.0
+Wells & Young's Ltd,9.18259201E8,5.0,4.0,BeerAdvocate,Milk / Sweet Stout,4.5,Young's Double Chocolate Stout,73.0
+Magic Hat Brewing Company,9.44438401E8,4.0,4.0,Todd,Scotch Ale / Wee Heavy,4.0,Jinx,296.0
+Magic Hat Brewing Company,9.27676801E8,4.0,4.0,Todd,American Amber / Red Ale,4.0,Bob's 1st Ale,294.0
+Brew Moon Restaurant & Microbrewery,9.26380801E8,3.5,3.5,BeerAdvocate,Fruit / Vegetable Beer,3.5,Brew Moon Purple Plum Wheat Ale,524.0
+Brew Moon Restaurant & Microbrewery,9.26380801E8,4.0,3.5,BeerAdvocate,Altbier,4.0,Brew Moon Alternative Ale,527.0
+Brew Moon Restaurant & Microbrewery,9.27504001E8,4.5,4.0,Jason,Extra Special / Strong Bitter (ESB),4.0,Brew Moon Prussia's Pride ESB,521.0
+Brew Moon Restaurant & Microbrewery,9.45043201E8,4.0,4.0,Jason,English Brown Ale,4.0,Brew Moon Nutcracker Festival Ale,660.0
+Brew Moon Restaurant & Microbrewery,9.26380801E8,4.0,3.5,BeerAdvocate,American Porter,4.0,Brew Moon Planetary Porter,526.0
+Brew Moon Restaurant & Microbrewery,9.26380801E8,3.0,3.5,BeerAdvocate,Herbed / Spiced Beer,4.0,Brew Moon Herbale,525.0
+Brew Moon Restaurant & Microbrewery,9.26380801E8,4.0,4.0,BeerAdvocate,American IPA,4.0,Brew Moon Toasted Head IPA,522.0
+Brew Moon Restaurant & Microbrewery,9.26380801E8,4.0,3.5,BeerAdvocate,American IPA,4.5,Brew Moon Toasted Head IPA,522.0
+Brew Moon Restaurant & Microbrewery,9.22320001E8,4.0,4.0,Jason,Irish Red Ale,4.0,Brew Moon Orion's Irish Amber,659.0
+Brew Moon Restaurant & Microbrewery,9.41587201E8,4.0,4.0,Jason,American IPA,4.0,Brew Moon Improper Hopper IPA,661.0
+Brew Moon Restaurant & Microbrewery,9.40723201E8,4.5,4.0,BeerAdvocate,English Brown Ale,4.0,Brew Moon Big Bang Brown,453.0
+Brew Moon Restaurant & Microbrewery,9.26380801E8,3.0,3.0,BeerAdvocate,Light Lager,3.5,Brew Moon Moon Light,523.0
+Brew Moon Restaurant & Microbrewery,9.30614401E8,4.0,4.5,Jason,California Common / Steam Beer,4.0,Brew Moon Tony's Steamin Lager,520.0
+Brasserie Lefèbvre SA,9.28281601E8,4.0,3.5,BeerAdvocate,Witbier,4.0,Blanche De Bruxelles / Manneken Pis Belgian White,78.0
+North East Brewing Company,9.26726401E8,4.0,3.0,BeerAdvocate,American Pale Lager,3.5,Allston Beer,413.0
+North East Brewing Company,9.26726401E8,4.5,4.0,BeerAdvocate,American Barleywine,4.5,Nail in the Brain Barley Wine,416.0
+North East Brewing Company,9.26726401E8,4.0,4.0,BeerAdvocate,Lambic - Fruit,4.5,Cherry 2000,415.0
+North East Brewing Company,9.26726401E8,4.5,4.0,BeerAdvocate,Maibock / Helles Bock,4.5,Springfest Maibock,414.0
+Castle Springs Brewing Company,9.16272001E8,4.5,4.0,Jason,Munich Helles Lager,4.5,Lucknow Munich-Style Lager,162.0
+Castle Springs Brewing Company,9.22060801E8,4.5,4.0,Jason,American Porter,4.0,Lucknow Porter,163.0
+Castle Springs Brewing Company,9.18777601E8,4.5,4.5,Jason,American IPA,4.5,Lucknow IPA,164.0

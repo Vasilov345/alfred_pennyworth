@@ -1,0 +1,120 @@
+brewery_name,review_time,review_overall,review_aroma,review_profilename,beer_style,review_taste,beer_name,beer_beerid
+Cambridge Brewing Company,9.69580801E8,4.5,4.0,BeerAdvocate,Kölsch,4.5,Regatta Golden,512.0
+Cambridge Brewing Company,9.69580801E8,4.0,4.0,BeerAdvocate,American Amber / Red Ale,4.5,Cambridge Amber,514.0
+Cambridge Brewing Company,9.69580801E8,4.5,4.0,BeerAdvocate,American Porter,4.5,Charles River Porter,515.0
+Cambridge Brewing Company,9.67852801E8,4.0,4.0,BeerAdvocate,Dunkelweizen,4.0,Dunkles Weizen,503.0
+Cambridge Brewing Company,9.55497601E8,4.0,3.5,Todd,Extra Special / Strong Bitter (ESB),4.0,Will's Extra Bitter,562.0
+Cambridge Brewing Company,9.72000001E8,4.5,4.0,Todd,Oatmeal Stout,4.5,Blackout Oatmeal Stout,638.0
+Cambridge Brewing Company,9.55497601E8,4.0,4.0,Todd,American Stout,4.0,BMF Stout,563.0
+Cambridge Brewing Company,9.69580801E8,4.0,4.0,BeerAdvocate,American Pale Ale (APA),4.5,Tall Tale Pale Ale,513.0
+Cambridge Brewing Company,9.69580801E8,5.0,4.0,BeerAdvocate,American IPA,4.5,Big Man Ale,505.0
+"Plzensky Prazdroj, a. s.",9.73014566E8,5.0,5.0,BarnacleBill,Czech Pilsener,5.0,Pilsner Urquell,429.0
+"Plzensky Prazdroj, a. s.",9.68544001E8,4.0,3.0,Todd,Czech Pilsener,3.0,Pilsner Urquell,429.0
+Sierra Nevada Brewing Co.,9.71481601E8,4.5,4.5,BeerAdvocate,American Stout,4.5,Sierra Nevada Stout,283.0
+Brouwerij Sterkens N.V.,9.69753601E8,4.5,4.0,BeerAdvocate,Baltic Porter,4.0,Hoogstraten Poorter,591.0
+Brouwerij Sterkens N.V.,9.69667201E8,4.0,4.0,BeerAdvocate,Belgian Strong Pale Ale,4.0,Bokrijks Kruikenbier,589.0
+Brouwerij Sterkens N.V.,9.78188346E8,4.5,4.0,Jason,Dubbel,4.5,St. Sebastiaan Dark,713.0
+Celis Brewery Inc.,9.54892801E8,3.0,3.5,Jason,American Pale Ale (APA),3.0,Pale Rider Ale,165.0
+McAuslan Brewing,9.72518401E8,4.5,4.5,Jason,American Pale Ale (APA),4.5,St-Ambroise Pale Ale,2703.0
+Desnoes & Geddes Limited,9.75625363E8,4.0,3.0,Todd,American Adjunct Lager,3.5,Red Stripe Jamaican Lager,689.0
+Long Trail Brewing Co.,9.63014401E8,3.5,4.0,Todd,English India Pale Ale (IPA),3.5,IPA,270.0
+Casco Bay Brewing Co.,9.78220801E8,4.0,4.0,Todd,American Pale Ale (APA),4.0,Portland Pirates Salty Pete's Peg Leg Ale,2414.0
+Casco Bay Brewing Co.,9.78220801E8,4.0,4.0,Todd,Irish Red Ale,5.0,Casco Bay RipTide Red Ale,714.0
+New Belgium Brewing,9.70876801E8,4.0,4.0,BeerAdvocate,American Amber / Red Ale,4.0,Fat Tire Amber Ale,607.0
+Carlsberg-Tetley Brewing Ltd,9.77342962E8,4.0,4.0,Todd,English Pale Ale,4.0,Tetley's English Ale,706.0
+Bières de Chimay S.A.,9.74678401E8,4.5,4.5,BeerAdvocate,Dubbel,5.0,Chimay Première (Red),672.0
+Brasserie de Rochefort,9.73468801E8,4.0,4.5,BeerAdvocate,Quadrupel (Quad),4.5,Trappistes Rochefort 10,645.0
+"Old Nutfield Brewing Company, Ltd.",9.71740801E8,4.0,4.5,Jason,American Amber / Red Ale,4.5,Nutfield Harvest Ale,437.0
+Unibroue,9.76128004E8,5.0,4.5,beerboy21,Belgian Strong Pale Ale,5.0,Don de Dieu,694.0
+Bierbrouwerij De Koningshoeven B.V.,9.69753601E8,3.0,2.5,BeerAdvocate,Belgian Pale Ale,3.0,La Trappe Blond (Koningshoeven / Dominus),590.0
+Brouwerij De Gouden Boom,9.75247833E8,4.0,4.0,Todd,Witbier,4.0,Blanche de Bruges,678.0
+Brouwerij De Gouden Boom,9.7818844E8,4.5,4.5,Jason,Tripel,4.5,Steenbrugge Abbey Tripel,711.0
+Private Stock Brewing Co.,9.74677547E8,4.0,3.0,Todd,American Malt Liquor,4.0,Haffenreffer Private Stock,669.0
+Brauerei C. & A. Veltins GmbH & Co.,9.69062401E8,4.0,3.0,Todd,German Pilsener,3.5,Veltins Pilsner,458.0
+Samuel Smith Old Brewery (Tadcaster),9.76047379E8,5.0,4.0,BarnacleBill,Oatmeal Stout,5.0,Samuel Smith's Oatmeal Stout,571.0
+Palm Springs Brewery Inc.,9.55411201E8,4.0,3.5,Jason,American Amber / Red Ale,4.0,Red Feather Premium Ale,441.0
+Pete's Brewing Company,9.69148801E8,4.0,4.0,Todd,Märzen / Oktoberfest,4.0,Pete's Wicked Oktoberfest,378.0
+Willimantic Brewing Co.,9.71551056E8,4.0,3.5,Jason,American Amber / Red Ale,4.0,Willimantic Autumn Ale,7075.0
+Willimantic Brewing Co.,9.7155149E8,4.0,4.0,Jason,American IPA,4.5,Willimantic Most Wanted IPA,1756.0
+JOS. Schlitz Brewing Co. (Pabst),9.73601563E8,4.0,3.0,Todd,American Adjunct Lager,3.5,Schlitz,263.0
+JOS. Schlitz Brewing Co. (Pabst),9.59558401E8,4.0,3.0,Todd,American Adjunct Lager,3.5,Schlitz,263.0
+Ballast Point Brewing Company,9.77443473E8,4.5,4.0,Jason,American IPA,4.5,Big Eye IPA,709.0
+Harpoon Brewery,9.75449396E8,5.0,4.0,Todd,American Porter,5.0,Catamount Porter,682.0
+Harpoon Brewery,9.73117758E8,4.0,4.0,Todd,American IPA,4.0,Harpoon IPA,311.0
+Harpoon Brewery,9.69753601E8,4.0,3.5,Todd,Munich Dunkel Lager,4.5,Harpoon Munich Type Dark Beer,314.0
+The Caledonian Brewing Company,9.73543358E8,5.0,4.0,Todd,Scottish Ale,5.0,Caledonian 80/-,602.0
+Brauerei Beck & Co.,9.69321601E8,4.0,3.5,Todd,Märzen / Oktoberfest,4.0,Beck's Oktoberfest,83.0
+Aass Brewery,9.74551199E8,4.0,4.0,Todd,Bock,5.0,Aass Bock,664.0
+Aass Brewery,9.74547226E8,4.0,4.0,Todd,Märzen / Oktoberfest,5.0,Aass Classic,663.0
+Bayerische Staatsbrauerei Weihenstephan,9.7818832E8,5.0,5.0,Jason,Munich Helles Lager,5.0,Weihenstephaner Original,712.0
+Boulder Beer / Wilderness Pub,9.74160001E8,4.0,3.5,Todd,English Brown Ale,4.0,Rockies Nut Brown Ale,654.0
+Murphy Brewery Ireland Limited,9.77011201E8,4.0,3.5,Todd,Irish Dry Stout,3.5,Murphy's Irish Stout,703.0
+Brewery Ommegang,9.69753601E8,4.5,4.0,Todd,Belgian Pale Ale,4.5,Rare Vos (Amber Ale),593.0
+Stone Brewing Co.,9.74329302E8,5.0,4.0,Todd,American Strong Ale,5.0,Arrogant Bastard Ale,92.0
+Stone Brewing Co.,9.73453611E8,4.0,4.0,Todd,American Double / Imperial IPA,4.5,Stone 4th Anniversary IPA,642.0
+Grupo Modelo S.A. de C.V.,9.74677788E8,3.5,3.0,Todd,Munich Dunkel Lager,3.5,Negra Modelo,667.0
+Oak Pond Brewing Company,9.78220801E8,4.0,4.0,Todd,English Brown Ale,4.0,OPB Nut Brown Ale,715.0
+Brouwerij Duvel Moortgat NV,9.76137713E8,5.0,4.5,Todd,Belgian Strong Pale Ale,5.0,Duvel,695.0
+Brouwerij Westmalle,9.73468801E8,5.0,4.5,BeerAdvocate,Tripel,5.0,Westmalle Trappist Tripel,646.0
+Brouwerij Westmalle,9.75170204E8,4.5,4.0,Todd,Dubbel,5.0,Westmalle Trappist Dubbel,674.0
+Einbecker Brauhaus AG,9.64569601E8,3.5,3.5,Todd,Maibock / Helles Bock,4.0,Einbecker Mai-Ur-Bock,202.0
+J.W. Lees & Co (Brewers) Ltd,9.77181964E8,3.0,5.0,Jason,English Barleywine,5.0,J.W. Lees Vintage Harvest Ale,705.0
+Mendocino Brewing Company,9.72172801E8,4.0,4.0,Todd,American Pale Ale (APA),3.5,Blue Heron Pale Ale,630.0
+Mendocino Brewing Company,9.72172801E8,4.5,3.5,Todd,American Amber / Red Ale,4.5,Red Tail Ale,631.0
+Mendocino Brewing Company,9.73347373E8,4.0,4.0,Todd,American Strong Ale,4.0,Eye of the Hawk,641.0
+Brouwerij Rodenbach N.V.,9.75166748E8,5.0,5.0,Todd,Flanders Red Ale,5.0,Rodenbach Grand Cru,673.0
+De Ridder Brewery,9.77358327E8,4.0,4.0,Jason,Witbier,4.0,Wieckse Witte,625.0
+Beacon Hotel (Sarah Hughes Brewery),9.66816001E8,4.0,3.5,Jason,English Dark Mild Ale,4.0,Original Sarah Hughes Dark Ruby Mild,439.0
+Smuttynose Brewing Company,9.71827201E8,4.0,4.5,Todd,American Porter,4.5,Smuttynose Robust Porter,622.0
+Smuttynose Brewing Company,9.68803201E8,3.5,3.5,Todd,Witbier,4.0,Smuttynose Belgian Style White Ale (Big Beer Series),450.0
+Miller Brewing Co.,9.73015406E8,1.0,1.0,BarnacleBill,Light Lager,1.0,Miller Lite,332.0
+Fuller Smith & Turner PLC,9.69062401E8,4.0,4.0,BeerAdvocate,English Strong Ale,4.5,Fuller's 1845,560.0
+Guinness Ltd.,9.73987201E8,5.0,4.0,Todd,Irish Dry Stout,5.0,Guinness Extra Stout (Original),650.0
+North Coast Brewing Co.,9.63014401E8,4.0,4.0,Todd,American IPA,4.0,ACME California IPA,403.0
+Greene King / Morland Brewery,9.72259201E8,4.0,3.0,Todd,English Pale Ale,3.5,Old Speckled Hen,637.0
+Greene King / Morland Brewery,9.70099201E8,4.0,3.0,Todd,English Pale Ale,4.0,Ruddles Pub Ale,350.0
+Traquair House Brewery Lld,9.60336001E8,4.5,4.5,BeerAdvocate,Scotch Ale / Wee Heavy,4.5,Traquair House Ale,36.0
+Ipswich Ale Brewery,9.74707955E8,4.0,4.0,Todd,American Brown Ale,4.5,Ipswich Dark Ale,649.0
+St. Pauli Brauerei C.L. Wilh. Brandt Gmbh & Co.,9.76149235E8,4.0,3.0,Todd,Munich Dunkel Lager,3.5,St. Pauli Girl Special Dark,698.0
+St. Pauli Brauerei C.L. Wilh. Brandt Gmbh & Co.,9.76149245E8,4.0,3.0,Todd,German Pilsener,3.0,St. Pauli Girl,700.0
+Anheuser-Busch,9.74679571E8,1.5,1.5,Todd,American Adjunct Lager,2.5,Busch Beer,670.0
+Anchor Brewing Company,9.73900801E8,3.5,3.0,Todd,English Bitter,3.0,Anchor Small Beer,648.0
+Anchor Brewing Company,9.74554704E8,4.0,4.0,Todd,American Pale Ale (APA),4.5,Anchor Liberty Ale,665.0
+Anchor Brewing Company,9.77176311E8,4.5,4.5,Jason,Winter Warmer,4.5,Our Special Ale 2000 (Anchor Christmas Ale),687.0
+Wachusett Brewing Company,9.62928001E8,4.0,3.0,Todd,American IPA,4.5,Wachusett IPA (India Pale Ale),23.0
+Brasserie Piedboeuf,9.78170181E8,3.0,3.0,Todd,Euro Pale Lager,4.0,Jupiler,349.0
+Three Floyds Brewing Co. & Brewpub,9.64310401E8,4.0,4.0,BeerAdvocate,American Pale Ale (APA),4.0,Alpha King Pale Ale,39.0
+Brouwerij De Dolle Brouwers,9.72259201E8,4.5,4.5,BeerAdvocate,Belgian Strong Pale Ale,4.5,De Dolle Bos Keun,634.0
+Brouwerij De Dolle Brouwers,9.72259201E8,5.0,4.0,BeerAdvocate,Belgian Strong Pale Ale,4.5,De Dolle Arabier,633.0
+Dornbusch Brewing Company,9.72824229E8,5.0,4.0,Todd,Märzen / Oktoberfest,4.5,Dornbusch Oktoberfest,610.0
+Redhook Ale Brewery,9.72345601E8,4.0,3.5,BeerAdvocate,American Porter,4.0,Blackhook Porter,54.0
+Dornbusch Brewing Company,9.77274839E8,4.5,4.5,Jason,Munich Helles Lager,4.5,Dornbusch Gold,200.0
+Wells & Young's Ltd,9.75454035E8,3.0,3.0,Todd,Winter Warmer,3.0,Young's Winter Warmer,683.0
+Wells & Young's Ltd,9.69062401E8,4.0,4.0,BeerAdvocate,Extra Special / Strong Bitter (ESB),4.0,Young's Ram Rod,561.0
+Shipyard Brewing Co.,9.74322101E8,4.5,4.5,Todd,Winter Warmer,5.0,Tremont Winter Ale,49.0
+Shipyard Brewing Co.,9.75619493E8,4.0,4.0,Todd,Extra Special / Strong Bitter (ESB),4.0,Winter Ale (Special Brew),686.0
+Stone Coast Brewing Co.,9.73014124E8,5.0,5.0,BarnacleBill,Altbier,5.0,Sunday River Alt Beer,457.0
+Stone Coast Brewing Co.,9.68976001E8,4.0,4.0,Todd,Altbier,4.0,Sunday River Alt Beer,457.0
+"M&#283;&#357;anský Pivovar Havlí&#269;k&#367;v Brod, A.S.",9.70012801E8,4.0,4.0,Todd,Euro Dark Lager,4.0,Rebel Garnet,597.0
+"M&#283;&#357;anský Pivovar Havlí&#269;k&#367;v Brod, A.S.",9.74160001E8,4.0,3.5,Todd,Czech Pilsener,3.5,Rebel,655.0
+Brouwerij De Koninck NV,9.75247808E8,4.0,4.0,Todd,Belgian Pale Ale,4.0,De Koninck,677.0
+Stella Artois,9.68803201E8,4.0,3.0,Todd,Euro Pale Lager,3.5,Stella Artois,449.0
+Magic Hat Brewing Company,9.73015007E8,5.0,5.0,BarnacleBill,Fruit / Vegetable Beer,5.0,"#9",299.0
+"Yuengling Brewery ",9.69494401E8,3.0,3.0,Todd,American Pale Lager,3.0,Yuengling Premium Beer,588.0
+Brew Moon Restaurant & Microbrewery,9.65174401E8,4.0,3.0,Todd,Dunkelweizen,3.5,Brew Moon Charles River Dunkel,564.0
+Brew Moon Restaurant & Microbrewery,9.65174401E8,4.5,4.0,Todd,Schwarzbier,4.5,Brew Moon Black Hole Lager,566.0
+Brew Moon Restaurant & Microbrewery,9.63360001E8,5.0,4.0,Jason,Hefeweizen,4.0,Brew Moon Hefeweizen,519.0
+Brew Moon Restaurant & Microbrewery,9.65174401E8,4.0,3.5,Todd,Witbier,4.5,Brew Moon Bière Blache,565.0
+Brew Moon Restaurant & Microbrewery,9.55756801E8,3.5,3.5,Jason,Herbed / Spiced Beer,4.0,Brew Moon Herbale,525.0
+Brew Moon Restaurant & Microbrewery,9.56966401E8,3.5,3.5,Todd,Lambic - Fruit,4.0,Brew Moon Fris Opdienen,559.0
+Brew Moon Restaurant & Microbrewery,9.72172801E8,3.5,4.0,Jason,Scotch Ale / Wee Heavy,4.0,Brew Moon 90 Schilling Scotch Ale,789.0
+Brew Moon Restaurant & Microbrewery,9.59817601E8,3.5,3.5,Jason,American Blonde Ale,3.5,Brew Moon Broadway Blonde,518.0
+Brew Moon Restaurant & Microbrewery,9.68112001E8,3.5,3.5,Jason,American Pale Ale (APA),3.5,Brew Moon Echo Rock Pale Ale,517.0
+Brew Moon Restaurant & Microbrewery,9.72086401E8,4.0,4.0,Todd,American Stout,4.0,Brew Moon Milk Chocolate Stout,787.0
+Brooklyn Brewery,9.75973484E8,4.5,4.5,Todd,Russian Imperial Stout,5.0,Brooklyn Black Chocolate Stout,680.0
+Brooklyn Brewery,9.7519798E8,3.0,3.0,Todd,English Barleywine,3.0,Brooklyn Monster Ale,2231.0
+Buffalo Bill's Brewery,9.71395201E8,4.0,4.0,Jason,American IPA,4.0,Alimony Ale,158.0
+Brasserie Lefèbvre SA,9.71136001E8,4.5,4.0,Todd,Belgian Strong Pale Ale,4.5,Barbãr (Belgian Honey Ale),612.0
+The Caledonian Brewery Company Limited,9.72777601E8,2.5,2.0,Todd,English Brown Ale,2.0,Newcastle Brown Ale,639.0
+Brouwerij Riva S.A.,9.75194526E8,4.0,4.0,Todd,Flanders Oud Bruin,5.0,Vondel,675.0
+"Tremont Brewery / Atlantic Coast Brewing, Ltd.",9.50140801E8,4.5,4.0,BeerAdvocate,American Porter,4.5,Tremont Porter,48.0
