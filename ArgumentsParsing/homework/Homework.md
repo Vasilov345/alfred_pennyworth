@@ -12,7 +12,7 @@
  - end_year; required: false; default: max(end_year) 
  - path_to_source_files; required: true;
  - destination_path; required: false; default: .
- - destination_filename; required: false; default: .
+ - destination_filename; required: false; default: f"{start_year}-{end_year}_{timestamp}.csv".
 Скрипт заходить в директорію path_to_source_files, та знаходить всі csv файли в діапазоні start_year:end_year.
 Витягує всі данні з них і створює 1 файл з всім витягнутими данними. 
 
