@@ -11,10 +11,16 @@ class Snake(list):
     def __init__(self):
         super().__init__()
         self.extend([Point(5, 5), Point(5, 6), Point(5, 7)])
+        self.direction = 'R'
+
+    @property
+    def head(self):
+        return self[-1]
 
     def move(self):
-        self.append(Point(self[-1].y, self[-1].x + 1))
-        self.pop(0)
+        if self.direction == 'R':
+            self.append(Point(self.head.y, self.head.x + 1))
+            self.pop(0)
 
 
 def print_snake(screen, snake):
@@ -24,13 +30,12 @@ def print_snake(screen, snake):
 
 def main(screen):
     snake = Snake()
-    print_snake(screen, snake)
-    screen.refresh()
-    snake.move()
-    snake.move()
-    screen.clear()
-    print_snake(screen, snake)
-    screen.refresh()
+    for _ in range(10):
+        snake.move()
+        print_snake(screen, snake)
+        screen.refresh()
+        sleep(1)
+        screen.clear()
     sleep(5)
 
 
