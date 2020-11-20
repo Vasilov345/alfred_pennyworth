@@ -12,13 +12,25 @@ class Snake(list):
         super().__init__()
         self.extend([Point(5, 5), Point(5, 6), Point(5, 7)])
 
+    def move(self):
+        self.append(Point(self[-1].y, self[-1].x + 1))
+        self.pop(0)
+
+
+def print_snake(screen, snake):
+    for point in snake:
+        screen.addch(*point, '#')
+
 
 def main(screen):
-    for i in Snake():
-        screen.addch(*i, '#')
-        sleep(1)
+    snake = Snake()
+    print_snake(screen, snake)
     screen.refresh()
-    # screen.clear()
+    snake.move()
+    snake.move()
+    screen.clear()
+    print_snake(screen, snake)
+    screen.refresh()
     sleep(5)
 
 
