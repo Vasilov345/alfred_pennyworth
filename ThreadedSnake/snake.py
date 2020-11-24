@@ -81,6 +81,27 @@ def main(screen):
             screen.nodelay(0)
             screen.getch()
             break
+            
+    def move(self):
+        if self.direction == 'R':
+            self.append(Point(self.head.y, self.head.x + 1))
+            self.pop(0)
 
+
+def print_snake(screen, snake):
+    for point in snake:
+        screen.addch(*point, '#')
+
+
+def main(screen):
+    snake = Snake()
+    for _ in range(10):
+        snake.move()
+        print_snake(screen, snake)
+        screen.refresh()
+        sleep(1)
+        screen.clear()
+    sleep(5)
+    
 
 curses.wrapper(main)
