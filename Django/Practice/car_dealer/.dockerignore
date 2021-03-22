@@ -1,0 +1,12 @@
+.git/
+.gitignore
+.idea/
+.data/
+.pytest_cache/
+docker-compose*.yml
+docker/containers
+src/**/static/
+src/**/media/
+docker/envs/.**
+venv/
+env
